@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{A69460A5-A89E-482E-A7C2-DFC958522E28}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Project1</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="8Connect.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Bit plane.cpp" />
+    <ClCompile Include="Color bit depth.cpp" />
+    <ClCompile Include="Contrast1.cpp" />
+    <ClCompile Include="Contrast2.cpp" />
+    <ClCompile Include="Cut.cpp" />
+    <ClCompile Include="Gary code.cpp" />
+    <ClCompile Include="Histogram equalization.cpp" />
+    <ClCompile Include="Histogram specification1.cpp" />
+    <ClCompile Include="Histogram.cpp" />
+    <ClCompile Include="Lightness.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Overlap.cpp" />
+    <ClCompile Include="splash_screen.cpp" />
+    <ClCompile Include="Threshold1.cpp" />
+    <ClCompile Include="Transparency.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="8Connect.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Bit plane.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Color bit depth.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Contrast1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Contrast2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Cut.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Gary code.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Histogram equalization.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Histogram specification1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Histogram.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Lightness.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Overlap.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="splash_screen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Threshold1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Transparency.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="8Connect.resx">
+      <DependentUpon>8Connect.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ball.resx">
+      <DependentUpon>Ball.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bit plane.resx">
+      <DependentUpon>Bit plane.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Color bit depth.resx">
+      <DependentUpon>Color bit depth.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrast1.resx">
+      <DependentUpon>Contrast1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cut.resx">
+      <DependentUpon>Cut.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gary code.resx">
+      <DependentUpon>Gary code.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histogram equalization.resx">
+      <DependentUpon>Histogram equalization.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histogram specification1.resx">
+      <DependentUpon>Histogram specification1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histogram.resx">
+      <DependentUpon>Histogram.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lightness.resx">
+      <DependentUpon>Lightness.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overlap.resx">
+      <DependentUpon>Overlap.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash_screen.resx">
+      <DependentUpon>splash_screen.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Threshold1.resx">
+      <DependentUpon>Threshold1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transparency.resx">
+      <DependentUpon>Transparency.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,39 @@
+D:\Control System\______________FILES\numerical methods\Project1\Project1\Debug\Project1.vcxproj.AssemblyReference.cache
+D:\Control System\______________FILES\numerical methods\Project1\Project1\Debug\Project1.MyForm.resources
+D:\Control System\______________FILES\numerical methods\Project1\Project1\Debug\Project1.vcxproj.GenerateResource.cache
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.vcxproj.GenerateResource.cache
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.MyForm.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.splash_screen.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.vcxproj.AssemblyReference.cache
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Overlap.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Lightness.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Gary code.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Bit plane.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Transparency.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Color bit depth.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Histogram.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Threshold1.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Histogram equalization.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Histogram specification1.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Ball.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Cut.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Contrast1.resources
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.8Connect.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.vcxproj.AssemblyReference.cache
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.8Connect.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Ball.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Bit plane.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Color bit depth.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Contrast1.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Cut.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Gary code.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Histogram equalization.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Histogram specification1.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Histogram.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Lightness.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.MyForm.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Overlap.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.splash_screen.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Threshold1.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Transparency.resources
+C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.vcxproj.GenerateResource.cache

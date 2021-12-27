@@ -1,0 +1,190 @@
+  Project1.8Connect.resources - Embedded, ContainedInManifestFile, 
+  Project1.Ball.resources - Embedded, ContainedInManifestFile, 
+  Project1.Bit plane.resources - Embedded, ContainedInManifestFile, 
+  Project1.Color bit depth.resources - Embedded, ContainedInManifestFile, 
+  Project1.Contrast1.resources - Embedded, ContainedInManifestFile, 
+  Project1.Cut.resources - Embedded, ContainedInManifestFile, 
+  Project1.Gary code.resources - Embedded, ContainedInManifestFile, 
+  Project1.Histogram equalization.resources - Embedded, ContainedInManifestFile, 
+  Project1.Histogram specification1.resources - Embedded, ContainedInManifestFile, 
+  Project1.Histogram.resources - Embedded, ContainedInManifestFile, 
+  Project1.Lightness.resources - Embedded, ContainedInManifestFile, 
+  Project1.MyForm.resources - Embedded, ContainedInManifestFile, 
+  Project1.Overlap.resources - Embedded, ContainedInManifestFile, 
+  Project1.splash_screen.resources - Embedded, ContainedInManifestFile, 
+  Project1.Threshold1.resources - Embedded, ContainedInManifestFile, 
+  Project1.Transparency.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Project1, Version=0.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Project1.Connected8: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap scr_gray : Public, Static
+Class Project1.Ball: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Project1.BitPlane: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap scr1 : Public
+    System.Drawing.Bitmap Plane_7 : Public
+    System.Drawing.Bitmap Plane_6 : Public
+    System.Drawing.Bitmap Plane_5 : Public
+    System.Drawing.Bitmap Plane_4 : Public
+    System.Drawing.Bitmap Plane_3 : Public
+    System.Drawing.Bitmap Plane_2 : Public
+    System.Drawing.Bitmap Plane_1 : Public
+    System.Drawing.Bitmap Plane_0 : Public
+    System.Drawing.Bitmap result : Public
+    System.Drawing.Bitmap Watermark : Public
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+    System.Windows.Forms.PictureBox pictureBox2 : Public
+    System.Windows.Forms.PictureBox pictureBox3 : Public
+    System.Windows.Forms.PictureBox pictureBox4 : Public
+    System.Windows.Forms.PictureBox pictureBox5 : Public
+    System.Windows.Forms.PictureBox pictureBox6 : Public
+    System.Windows.Forms.PictureBox pictureBox7 : Public
+    System.Windows.Forms.PictureBox pictureBox8 : Public
+    System.Windows.Forms.PictureBox pictureBox9 : Public
+    System.Windows.Forms.PictureBox pictureBox10 : Public
+    System.Windows.Forms.PictureBox pictureBox11 : Public
+  Methods:
+    SNR(Bitmap, Bitmap): PrivateScope, Public, HideBySig
+Class Project1.BitDepth: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap scr1 : Public
+    System.Drawing.Bitmap gray : Public
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+Class Project1.contraststretch: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap scr1_gray : Public
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+Class Project1.ContrastSet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+    System.Drawing.Bitmap scr_gray : Public, Static
+Class Project1.Cut: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 X1 : Public
+    Int32 X2 : Public
+    Int32 Y1 : Public
+    Int32 Y2 : Public
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+    System.Drawing.Bitmap scr : Public, Static
+Class Project1.Graycode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap scr1_gray : Public
+    System.Windows.Forms.PictureBox pictureBox9 : Public
+    System.Windows.Forms.PictureBox pictureBox8 : Public
+    System.Windows.Forms.PictureBox pictureBox7 : Public
+    System.Windows.Forms.PictureBox pictureBox6 : Public
+    System.Windows.Forms.PictureBox pictureBox5 : Public
+    System.Windows.Forms.PictureBox pictureBox4 : Public
+    System.Windows.Forms.PictureBox pictureBox3 : Public
+    System.Windows.Forms.PictureBox pictureBox2 : Public
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+Class Project1.HistogramEqualization: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+    System.Windows.Forms.PictureBox pictureBox2 : Public
+    System.Drawing.Bitmap scr1 : Public, Static
+Class Project1.HistogramSpecification: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap scr2 : Public
+    System.Drawing.Bitmap scr1 : Public
+    System.Drawing.Bitmap scr1_gray : Public
+    System.Drawing.Bitmap source : Public, Static
+  Methods:
+    LoadPcxFile(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class Project1.Histogram: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap scr_gray : Public
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+    System.Drawing.Bitmap scr : Public, Static
+Class Project1.Lightness: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+    System.Drawing.Bitmap lightness_picturebox : Public, Static
+Class Project1.Overlap: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap source1 : Public, Static
+    System.Drawing.Bitmap source2 : Public, Static
+  Methods:
+    LOADPCXDATA(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class Project1.Transparent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap src1 : Public
+    System.Drawing.Bitmap src2 : Public
+    System.Windows.Forms.PictureBox pictureBox2 : Public
+    System.Drawing.Bitmap source : Public, Static
+    System.Drawing.Bitmap Display : Public, Static
+    System.Drawing.Bitmap source_Gray : Public, Static
+  Methods:
+    LoadPcxFile(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class Project1.Threshold: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap scr1 : Public
+    System.Drawing.Bitmap scr_threshold_gray : Public
+    System.Windows.Forms.PictureBox pictureBox1 : Public
+Class Project1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Bitmap Display : Public
+    System.Drawing.Bitmap OriginGray : Public
+    System.Drawing.Bitmap source : Public, Static
+  Methods:
+    LOADPCXDATA(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    LOADBMPDATA(String, BMPHEAD IsImplicitlyDereferenced, BMPPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SNR(Bitmap, Bitmap): PrivateScope, Public, HideBySig
+    SNR2(): PrivateScope, Public, HideBySig
+    Generate_R(): PrivateScope, Public, HideBySig
+    Generate_G(): PrivateScope, Public, HideBySig
+    Generate_B(): PrivateScope, Public, HideBySig
+    Gary(): PrivateScope, Public, HideBySig
+    GaryInvert(): PrivateScope, Public, HideBySig
+    RGBtoHSI(Int32): PrivateScope, Public, HideBySig
+Class Project1.splash_screen: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

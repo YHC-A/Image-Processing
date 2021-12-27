@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="來源檔案">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyForm.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="splash_screen.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Cut.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Overlap.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Lightness.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Gary code.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Bit plane.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Transparency.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Color bit depth.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Histogram.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Threshold1.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Histogram equalization.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Histogram specification1.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Contrast1.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Contrast2.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="8Connect.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="splash_screen.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Cut.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Overlap.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Lightness.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Gary code.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Bit plane.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Transparency.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Color bit depth.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Histogram.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Threshold1.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Histogram equalization.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Histogram specification1.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Contrast1.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Contrast2.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="8Connect.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
