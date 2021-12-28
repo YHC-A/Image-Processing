@@ -139,6 +139,7 @@
     <ClCompile Include="splash_screen.cpp" />
     <ClCompile Include="Threshold1.cpp" />
     <ClCompile Include="Transparency.cpp" />
+    <ClCompile Include="Video.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="8Connect.h">
@@ -192,6 +193,9 @@
     <ClInclude Include="Transparency.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Video.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="8Connect.resx">
@@ -241,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transparency.resx">
       <DependentUpon>Transparency.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video.resx">
+      <DependentUpon>Video.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

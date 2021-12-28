@@ -37,3 +37,4 @@ C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.splash_screen.res
 C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Threshold1.resources
 C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.Transparency.resources
 C:\Users\User\OneDrive\桌面\Project1\Project1\Debug\Project1.vcxproj.GenerateResource.cache
+D:\imageprocessing\Image\Project1\Project1\Debug\Project1.Video.resources

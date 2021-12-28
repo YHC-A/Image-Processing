@@ -14,6 +14,7 @@
   Project1.splash_screen.resources - Embedded, ContainedInManifestFile, 
   Project1.Threshold1.resources - Embedded, ContainedInManifestFile, 
   Project1.Transparency.resources - Embedded, ContainedInManifestFile, 
+  Project1.Video.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Project1, Version=0.0.*, Culture=不因語言而異 (不因國別而異): 
 	hash=SHA1, flags=PublicKey
@@ -30,6 +31,8 @@ Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutra
 Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC.STLCLR, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
 	hash=None, flags=None
 Class Project1.Connected8: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
@@ -167,6 +170,20 @@ Class Project1.Threshold: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     System.Drawing.Bitmap scr1 : Public
     System.Drawing.Bitmap scr_threshold_gray : Public
     System.Windows.Forms.PictureBox pictureBox1 : Public
+Class Project1.Video: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    cliext.vector<System::Drawing::Bitmap ^> videos IsByValue : Public, InitOnly
+    UInt32 rate : Public
+    Single M : Public
+    UInt32 FrameNo : Public
+    System.Threading.Thread Encode_thread1 : Public
+    System.Threading.Thread Encode_thread2 : Public
+    Int32 mask : Public
+  Methods:
+    Encode_FS(): PrivateScope, Public, HideBySig
+    Encode_TSS(): PrivateScope, Public, HideBySig
 Class Project1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

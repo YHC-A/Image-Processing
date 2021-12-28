@@ -15,6 +15,7 @@
 #include "Ball.h"
 #include "Contrast1.h"
 #include "8Connect.h"
+#include "Video.h"
 
 
 namespace Project1 {
@@ -147,6 +148,7 @@ private: System::Windows::Forms::Button^ button14;
 private: System::Windows::Forms::Button^ button15;
 private: System::Windows::Forms::Button^ button16;
 private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
+private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 
 
 
@@ -315,6 +317,7 @@ private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 			this->toolStripStatusLabel2 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel3 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel4 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
+			this->toolStripStatusLabel6 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel5 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
 			this->trackBar1 = (gcnew System::Windows::Forms::TrackBar());
@@ -340,7 +343,7 @@ private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->toolStripStatusLabel6 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
+			this->toolStripButton5 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->toolStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox_origin))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox_colormapORpalette))->BeginInit();
@@ -357,11 +360,11 @@ private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 			// toolStrip1
 			// 
 			this->toolStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
-			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(13) {
+			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(14) {
 				this->toolStripDropDownButton1,
 					this->toolStripDropDownButton2, this->toolStripButton1, this->rotatetoolStripButton, this->cut_overlap_toolStripDropDownButton3,
 					this->brightnesstoolStripButton, this->toolStripButton2, this->Bit_plane_toolStripDropDownButton3, this->toolStripDropDownButton3,
-					this->Filter, this->toolStripDropDownButton4, this->toolStripButton4, this->toolStripButton3
+					this->Filter, this->toolStripDropDownButton4, this->toolStripButton4, this->toolStripButton5, this->toolStripButton3
 			});
 			this->toolStrip1->Location = System::Drawing::Point(0, 0);
 			this->toolStrip1->Name = L"toolStrip1";
@@ -617,7 +620,7 @@ private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 			// contrastToolStripMenuItem
 			// 
 			this->contrastToolStripMenuItem->Name = L"contrastToolStripMenuItem";
-			this->contrastToolStripMenuItem->Size = System::Drawing::Size(177, 30);
+			this->contrastToolStripMenuItem->Size = System::Drawing::Size(224, 30);
 			this->contrastToolStripMenuItem->Text = L"Contrast";
 			this->contrastToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::contrastToolStripMenuItem_Click);
 			// 
@@ -908,6 +911,15 @@ private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 			this->toolStripStatusLabel4->Name = L"toolStripStatusLabel4";
 			this->toolStripStatusLabel4->Size = System::Drawing::Size(39, 25);
 			this->toolStripStatusLabel4->Text = L"B : ";
+			// 
+			// toolStripStatusLabel6
+			// 
+			this->toolStripStatusLabel6->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(136)));
+			this->toolStripStatusLabel6->ForeColor = System::Drawing::Color::MediumTurquoise;
+			this->toolStripStatusLabel6->Name = L"toolStripStatusLabel6";
+			this->toolStripStatusLabel6->Size = System::Drawing::Size(109, 25);
+			this->toolStripStatusLabel6->Text = L"H :   S :   I : ";
 			// 
 			// toolStripStatusLabel5
 			// 
@@ -1219,14 +1231,16 @@ private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
-			// toolStripStatusLabel6
+			// toolStripButton5
 			// 
-			this->toolStripStatusLabel6->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(136)));
-			this->toolStripStatusLabel6->ForeColor = System::Drawing::Color::MediumTurquoise;
-			this->toolStripStatusLabel6->Name = L"toolStripStatusLabel6";
-			this->toolStripStatusLabel6->Size = System::Drawing::Size(109, 25);
-			this->toolStripStatusLabel6->Text = L"H :   S :   I : ";
+			this->toolStripButton5->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->toolStripButton5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton5.Image")));
+			this->toolStripButton5->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->toolStripButton5->Name = L"toolStripButton5";
+			this->toolStripButton5->Size = System::Drawing::Size(91, 29);
+			this->toolStripButton5->Text = L"Video";
+			this->toolStripButton5->Click += gcnew System::EventHandler(this, &MyForm::toolStripButton5_Click);
 			// 
 			// MyForm
 			// 
@@ -4031,7 +4045,11 @@ private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 		pictureBox_show->Image = Display;
 		SNR2();
 	}
-
+	// Video
+	private: System::Void toolStripButton5_Click(System::Object^ sender, System::EventArgs^ e) {
+		Video^ video = gcnew Video;
+		video->Show();
+	}
 };
 
 }
