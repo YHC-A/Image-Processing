@@ -88,6 +88,8 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TrackBar^ trackBar1;
+	private: System::Windows::Forms::Button^ button1;
+
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
@@ -133,6 +135,7 @@ namespace Project1 {
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->label8 = (gcnew System::Windows::Forms::Label());
@@ -456,17 +459,18 @@ namespace Project1 {
 			// 
 			this->button9->Font = (gcnew System::Drawing::Font(L"·L³n¥¿¶ÂÅé", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
-			this->button9->Location = System::Drawing::Point(148, 251);
+			this->button9->Location = System::Drawing::Point(9, 298);
 			this->button9->Margin = System::Windows::Forms::Padding(4);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(132, 39);
 			this->button9->TabIndex = 27;
-			this->button9->Text = L"°±¤î½s½X";
+			this->button9->Text = L"¼È°±½s½X";
 			this->button9->UseVisualStyleBackColor = true;
 			this->button9->Click += gcnew System::EventHandler(this, &Video::button9_Click);
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->button1);
 			this->groupBox3->Controls->Add(this->button9);
 			this->groupBox3->Controls->Add(this->button8);
 			this->groupBox3->Controls->Add(this->groupBox2);
@@ -477,10 +481,20 @@ namespace Project1 {
 			this->groupBox3->Margin = System::Windows::Forms::Padding(4);
 			this->groupBox3->Name = L"groupBox3";
 			this->groupBox3->Padding = System::Windows::Forms::Padding(4);
-			this->groupBox3->Size = System::Drawing::Size(460, 306);
+			this->groupBox3->Size = System::Drawing::Size(460, 369);
 			this->groupBox3->TabIndex = 28;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"Coding";
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(148, 298);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(132, 39);
+			this->button1->TabIndex = 28;
+			this->button1->Text = L"Ä~Äò½s½X";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Video::button1_Click);
 			// 
 			// label1
 			// 
@@ -699,6 +713,26 @@ namespace Project1 {
 			Encode_thread2->Suspend();
 
 		}
+	}
+
+	// Thread exe
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		if ((radioButton1->Checked == true) && (radioButton3->Checked == true) || (radioButton2->Checked == true) && (radioButton3->Checked == true)) {
+			Encode_thread1->Resume();
+		}
+		else if ((radioButton1->Checked == true) && (radioButton5->Checked == true) || (radioButton2->Checked == true) && (radioButton5->Checked == true)) {
+			Encode_thread2->Resume();
+		}
+	}
+
+	// ²×¤î Thread
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		if ((radioButton1->Checked == true) && (radioButton3->Checked == true) || (radioButton2->Checked == true) && (radioButton3->Checked == true)) {
+			Encode_thread1->Abort();
+		}
+		else if ((radioButton1->Checked == true) && (radioButton5->Checked == true) || (radioButton2->Checked == true) && (radioButton5->Checked == true)) {
+			Encode_thread2->Abort();
+		}	
 	}
 
 
@@ -1000,5 +1034,6 @@ namespace Project1 {
 		sw->Close();
 	}
 
-	};
+
+};
 }
