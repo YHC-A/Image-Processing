@@ -4,6 +4,8 @@
 #include <iostream>
 #include <stdlib.h>
 #include <fstream>
+#include "TTSdecode.h"
+
 
 namespace Project1 {
 
@@ -71,7 +73,7 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
 
-	private: System::Windows::Forms::ToolStripButton^ toolStripButton2;
+
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::RadioButton^ radioButton1;
@@ -89,6 +91,8 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TrackBar^ trackBar1;
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::ToolStripSplitButton^ toolStripSplitButton1;
+	private: System::Windows::Forms::ToolStripMenuItem^ decodeTSSToolStripMenuItem;
 
 	private: System::ComponentModel::IContainer^ components;
 
@@ -109,7 +113,6 @@ namespace Project1 {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Video::typeid));
 			this->toolStrip1 = (gcnew System::Windows::Forms::ToolStrip());
 			this->toolStripButton1 = (gcnew System::Windows::Forms::ToolStripButton());
-			this->toolStripButton2 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
@@ -141,6 +144,8 @@ namespace Project1 {
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->trackBar1 = (gcnew System::Windows::Forms::TrackBar());
+			this->toolStripSplitButton1 = (gcnew System::Windows::Forms::ToolStripSplitButton());
+			this->decodeTSSToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
@@ -160,7 +165,7 @@ namespace Project1 {
 			this->toolStrip1->ImageScalingSize = System::Drawing::Size(20, 20);
 			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->toolStripButton1,
-					this->toolStripButton2
+					this->toolStripSplitButton1
 			});
 			this->toolStrip1->Location = System::Drawing::Point(0, 0);
 			this->toolStrip1->Name = L"toolStrip1";
@@ -175,19 +180,9 @@ namespace Project1 {
 				static_cast<System::Byte>(136)));
 			this->toolStripButton1->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton1->Name = L"toolStripButton1";
-			this->toolStripButton1->Size = System::Drawing::Size(96, 29);
-			this->toolStripButton1->Text = L"開啟檔案";
+			this->toolStripButton1->Size = System::Drawing::Size(48, 29);
+			this->toolStripButton1->Text = L"File";
 			this->toolStripButton1->Click += gcnew System::EventHandler(this, &Video::toolStripButton1_Click);
-			// 
-			// toolStripButton2
-			// 
-			this->toolStripButton2->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Text;
-			this->toolStripButton2->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(136)));
-			this->toolStripButton2->ImageTransparentColor = System::Drawing::Color::Magenta;
-			this->toolStripButton2->Name = L"toolStripButton2";
-			this->toolStripButton2->Size = System::Drawing::Size(56, 29);
-			this->toolStripButton2->Text = L"解碼";
 			// 
 			// pictureBox1
 			// 
@@ -546,6 +541,25 @@ namespace Project1 {
 			this->trackBar1->TabIndex = 32;
 			this->trackBar1->Scroll += gcnew System::EventHandler(this, &Video::trackBar1_Scroll_1);
 			// 
+			// toolStripSplitButton1
+			// 
+			this->toolStripSplitButton1->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Text;
+			this->toolStripSplitButton1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->decodeTSSToolStripMenuItem });
+			this->toolStripSplitButton1->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->toolStripSplitButton1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripSplitButton1.Image")));
+			this->toolStripSplitButton1->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->toolStripSplitButton1->Name = L"toolStripSplitButton1";
+			this->toolStripSplitButton1->Size = System::Drawing::Size(104, 29);
+			this->toolStripSplitButton1->Text = L"Decode";
+			// 
+			// decodeTSSToolStripMenuItem
+			// 
+			this->decodeTSSToolStripMenuItem->Name = L"decodeTSSToolStripMenuItem";
+			this->decodeTSSToolStripMenuItem->Size = System::Drawing::Size(224, 30);
+			this->decodeTSSToolStripMenuItem->Text = L"Decode TSS";
+			this->decodeTSSToolStripMenuItem->Click += gcnew System::EventHandler(this, &Video::decodeTSSToolStripMenuItem_Click);
+			// 
 			// Video
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
@@ -576,7 +590,7 @@ namespace Project1 {
 			this->Controls->Add(this->toolStrip1);
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"Video";
-			this->Text = L"影片";
+			this->Text = L"Video";
 			this->toolStrip1->ResumeLayout(false);
 			this->toolStrip1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
@@ -864,7 +878,8 @@ namespace Project1 {
 							}
 							pictureBox3->Image = zoomin;
 
-							cal = Matchmethod_caculate(target, candidate);  //MAD方式計算
+							cal = Matchmethod_caculate(target, candidate);  
+							//MAD方式計算
 							//for (int col = 0; col < mask; col++) {
 							//	for (int row = 0; row < mask; row++) {
 							//		cal += abs(target->GetPixel(row, col).R - candidate->GetPixel(row, col).R);  //MAD方式計算
@@ -1034,6 +1049,13 @@ namespace Project1 {
 		sw->Close();
 	}
 
-
+	// Decode TTS
+	private: System::Void decodeTSSToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		TTSdecode^ TTSDECIDE = gcnew TTSdecode;
+		for (int i = 0; i < videos.size(); i++) {
+			TTSDECIDE->videoseries.push_back(gcnew Bitmap(videos[i]));
+		}
+		TTSDECIDE->Show();
+	}
 };
 }

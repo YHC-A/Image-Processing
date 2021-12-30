@@ -291,6 +291,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->toolStripDropDownButton4 = (gcnew System::Windows::Forms::ToolStripDropDownButton());
 			this->contrastToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripButton4 = (gcnew System::Windows::Forms::ToolStripButton());
+			this->toolStripButton5 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->toolStripButton3 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->pictureBox_origin = (gcnew System::Windows::Forms::PictureBox());
@@ -343,7 +344,6 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->toolStripButton5 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->toolStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox_origin))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox_colormapORpalette))->BeginInit();
@@ -620,7 +620,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// contrastToolStripMenuItem
 			// 
 			this->contrastToolStripMenuItem->Name = L"contrastToolStripMenuItem";
-			this->contrastToolStripMenuItem->Size = System::Drawing::Size(224, 30);
+			this->contrastToolStripMenuItem->Size = System::Drawing::Size(177, 30);
 			this->contrastToolStripMenuItem->Text = L"Contrast";
 			this->contrastToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::contrastToolStripMenuItem_Click);
 			// 
@@ -634,6 +634,17 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->toolStripButton4->Size = System::Drawing::Size(114, 29);
 			this->toolStripButton4->Text = L"Connect";
 			this->toolStripButton4->Click += gcnew System::EventHandler(this, &MyForm::toolStripButton4_Click);
+			// 
+			// toolStripButton5
+			// 
+			this->toolStripButton5->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->toolStripButton5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton5.Image")));
+			this->toolStripButton5->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->toolStripButton5->Name = L"toolStripButton5";
+			this->toolStripButton5->Size = System::Drawing::Size(91, 29);
+			this->toolStripButton5->Text = L"Video";
+			this->toolStripButton5->Click += gcnew System::EventHandler(this, &MyForm::toolStripButton5_Click);
 			// 
 			// toolStripButton3
 			// 
@@ -656,7 +667,6 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->pictureBox_origin->Location = System::Drawing::Point(0, 73);
 			this->pictureBox_origin->Name = L"pictureBox_origin";
 			this->pictureBox_origin->Size = System::Drawing::Size(315, 205);
-			this->pictureBox_origin->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
 			this->pictureBox_origin->TabIndex = 1;
 			this->pictureBox_origin->TabStop = false;
 			this->pictureBox_origin->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::pictureBox_origin_MouseMove);
@@ -943,7 +953,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->groupBox2->Size = System::Drawing::Size(419, 160);
 			this->groupBox2->TabIndex = 14;
 			this->groupBox2->TabStop = false;
-			this->groupBox2->Text = L"旋轉";
+			this->groupBox2->Text = L"Rotate";
 			this->groupBox2->Visible = false;
 			// 
 			// trackBar1
@@ -958,12 +968,12 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// comboBox3
 			// 
 			this->comboBox3->FormattingEnabled = true;
-			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"正推轉", L"逆推轉" });
+			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"正推", L"逆推" });
 			this->comboBox3->Location = System::Drawing::Point(194, 46);
 			this->comboBox3->Name = L"comboBox3";
 			this->comboBox3->Size = System::Drawing::Size(121, 33);
 			this->comboBox3->TabIndex = 1;
-			this->comboBox3->Text = L"正推轉";
+			this->comboBox3->Text = L"正推";
 			// 
 			// textBox3
 			// 
@@ -1231,17 +1241,6 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
-			// toolStripButton5
-			// 
-			this->toolStripButton5->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(136)));
-			this->toolStripButton5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton5.Image")));
-			this->toolStripButton5->ImageTransparentColor = System::Drawing::Color::Magenta;
-			this->toolStripButton5->Name = L"toolStripButton5";
-			this->toolStripButton5->Size = System::Drawing::Size(91, 29);
-			this->toolStripButton5->Text = L"Video";
-			this->toolStripButton5->Click += gcnew System::EventHandler(this, &MyForm::toolStripButton5_Click);
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
@@ -1328,6 +1327,8 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 				source = safe_cast<Bitmap^>(Image::FromFile(openFileDialog1->FileName));
 				pictureBox_origin->Image = source;
 				OriginGray = Gary();
+				this->label_originfile->Visible = true;
+				this->label_originfile->Text = "File : " + openFileDialog1->FileName;
 
 			}
 		
@@ -1925,7 +1926,13 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 	}
 
 	private: System::Void 色彩選項ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		RGBpanel->Visible = true;
+		if (this->RGBpanel->Visible == false) {
+			RGBpanel->Visible = true;
+		}
+		else {
+			RGBpanel->Visible = false;
+		}
+		
 	}
 
 	private: System::Void origin_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -2061,8 +2068,15 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 
 	// zoom
 	private: System::Void toolStripButton1_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->groupBox1->Visible = true;
+		if (this->groupBox1->Visible == false) {
+			this->groupBox1->Visible = true;
+		}
+		else {
+			this->groupBox1->Visible = false;
+		}
+		
 	}
+
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		double times = System::Convert::ToDouble(textBox1->Text);
 		if (this->checkBox1->Checked == true && (this->checkBox2->Checked == false)) {
@@ -2203,7 +2217,12 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 	}
 
 	private: System::Void toolStripButton2_Click(System::Object^ sender, System::EventArgs^ e) {
-		groupBox2->Visible = true;
+		if (groupBox2->Visible == false) {
+			groupBox2->Visible = true;
+		}
+		else {
+			groupBox2->Visible = false;
+		}
 	}
 
 	private: System::Void trackBar1_Scroll(System::Object^ sender, System::EventArgs^ e) {
@@ -2270,7 +2289,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 
 	private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 		double theta;
-		if (this->comboBox3->Text == "正推轉") {
+		if (this->comboBox3->Text == "正推") {
 			if (textBox3->Text == "") {
 				theta = 0;
 			}
@@ -2303,7 +2322,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			}
 			pictureBox_show->Image = rotate;
 		}
-		else if (this->comboBox3->Text == "逆推轉") {
+		else if (this->comboBox3->Text == "逆推") {
 
 			if (textBox3->Text == "") {
 				theta = 0;

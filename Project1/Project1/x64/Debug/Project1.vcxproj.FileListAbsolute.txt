@@ -1,0 +1,18 @@
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.8Connect.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Ball.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Bit plane.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Color bit depth.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Contrast1.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Cut.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Gary code.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Histogram equalization.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Histogram specification1.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Histogram.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Lightness.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.MyForm.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Overlap.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.splash_screen.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Threshold1.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Transparency.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Video.resources
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
