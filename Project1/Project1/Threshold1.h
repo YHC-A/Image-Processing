@@ -208,7 +208,7 @@ namespace Project1 {
 				r = pixel.R;
 				g = pixel.G;
 				b = pixel.B;
-				gs = 0.3 * r + 0.3 * g + 0.4 * b;
+				gs = 0.299 * r + 0.587 * g + 0.114 * b;
 				Color paint = Color::FromArgb(gs, gs, gs);
 				Gray->SetPixel(i, j, paint);
 			}

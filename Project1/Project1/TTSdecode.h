@@ -306,22 +306,23 @@ namespace Project1 {
 			});
 			this->檔案ToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(136)));
+			this->檔案ToolStripMenuItem->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"檔案ToolStripMenuItem.Image")));
 			this->檔案ToolStripMenuItem->Name = L"檔案ToolStripMenuItem";
-			this->檔案ToolStripMenuItem->Size = System::Drawing::Size(58, 29);
+			this->檔案ToolStripMenuItem->Size = System::Drawing::Size(82, 29);
 			this->檔案ToolStripMenuItem->Text = L"File";
 			// 
 			// tSSMAD16ToolStripMenuItem
 			// 
 			this->tSSMAD16ToolStripMenuItem->Name = L"tSSMAD16ToolStripMenuItem";
 			this->tSSMAD16ToolStripMenuItem->Size = System::Drawing::Size(224, 30);
-			this->tSSMAD16ToolStripMenuItem->Text = L"TSS(MAD-16)";
+			this->tSSMAD16ToolStripMenuItem->Text = L"TSS(MAD-8)";
 			this->tSSMAD16ToolStripMenuItem->Click += gcnew System::EventHandler(this, &TTSdecode::tSSMAD16ToolStripMenuItem_Click);
 			// 
 			// tSSMAD8ToolStripMenuItem
 			// 
 			this->tSSMAD8ToolStripMenuItem->Name = L"tSSMAD8ToolStripMenuItem";
 			this->tSSMAD8ToolStripMenuItem->Size = System::Drawing::Size(224, 30);
-			this->tSSMAD8ToolStripMenuItem->Text = L"TSS(MAD-8)";
+			this->tSSMAD8ToolStripMenuItem->Text = L"TSS(MSD-8)";
 			this->tSSMAD8ToolStripMenuItem->Click += gcnew System::EventHandler(this, &TTSdecode::tSSMAD8ToolStripMenuItem_Click);
 			// 
 			// tSSMSD16ToolStripMenuItem
@@ -495,7 +496,7 @@ namespace Project1 {
 
 	}
 
-		   //tss mad 16
+	//tss mad 8
 	private: System::Void tSSMAD16ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		decodesereis.clear();
 		motionvector.clear();
@@ -503,12 +504,14 @@ namespace Project1 {
 		DECODE.clear();
 		PSNR.clear();
 
-		std::fstream fs("TSS1.txt");
-		int a[3840][2];
-		for (int i = 0; i < 3840; i++) {
+		std::fstream fs("TSS_MAD.txt");
+		int a[15360][2];
+		for (int i = 0; i < 15360; i++) {
 			for (int j = 0; j < 2; j++) {
 				fs >> a[i][j];
+				std::cout << a[i][j] << " ";
 			}
+			std::cout << "\n";
 		}
 		fs.close();
 
@@ -537,21 +540,21 @@ namespace Project1 {
 			DECODE.push_back(gcnew Bitmap(256, 256));//解碼時候 創造出來的圖
 
 
-			for (int y = 0; y < 16; y++) {
-				for (int x = 0; x < 16; x++) {
+			for (int y = 0; y < 32; y++) {
+				for (int x = 0; x < 32; x++) {
 
 					//先知道位置 移動起點
-					start.X = a[i * 256 + y * 16 + x][0] + 7;
-					start.Y = a[i * 256 + y * 16 + x][1] + 7;
-					end.X = x * 16 + 7;
-					end.Y = y * 16 + 7;
+					start.X = a[i * 1024 + y * 32 + x][0] + 3;
+					start.Y = a[i * 1024 + y * 32 + x][1] + 3;
+					end.X = x * 8 + 3;
+					end.Y = y * 8 + 3;
 					MOTION[i]->DrawLine(pen, start, end);
 					motionvector[i]->SetPixel(start.X, start.Y, R);
 
-					for (int row = 0; row < 16; row++) {
-						for (int col = 0; col < 16; col++) {
-							Color set = decodesereis[i]->GetPixel(a[i * 256 + y * 16 + x][0] + row, a[i * 256 + y * 16 + x][1] + col);//利用前一張造出下一張
-							DECODE[i]->SetPixel(x * 16 + row, y * 16 + col, set);
+					for (int row = 0; row < 8; row++) {
+						for (int col = 0; col < 8; col++) {
+							Color set = decodesereis[i]->GetPixel(a[i * 1024 + y * 32 + x][0] + row, a[i * 1024 + y * 32 + x][1] + col);//利用前一張造出下一張
+							DECODE[i]->SetPixel(x * 8 + row, y * 8 + col, set);
 
 						}
 					}
@@ -705,7 +708,7 @@ namespace Project1 {
 
 	}
 
-		   //tss mad 8
+	//tss msd 8
 	private: System::Void tSSMAD8ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		decodesereis.clear();
 		motionvector.clear();
@@ -713,7 +716,7 @@ namespace Project1 {
 		DECODE.clear();
 		PSNR.clear();
 
-		std::fstream fs("TSSFF8.txt");
+		std::fstream fs("TSS_MSD.txt");
 		int a[15360][2];
 		for (int i = 0; i < 15360; i++) {
 			for (int j = 0; j < 2; j++) {

@@ -54,7 +54,7 @@ namespace Project1 {
 			}
 		}
 
-	public: static Bitmap^ source; Bitmap^ Display; Bitmap^ OriginGray;//資源
+	public: static Bitmap^ source; Bitmap^ Display; Bitmap^ OriginGray; int sigma;//資源
 	private: System::Windows::Forms::ToolStrip^ toolStrip1;
 	protected:
 	private: System::Windows::Forms::ToolStripDropDownButton^ toolStripDropDownButton1;
@@ -149,6 +149,7 @@ private: System::Windows::Forms::Button^ button15;
 private: System::Windows::Forms::Button^ button16;
 private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
+private: System::Windows::Forms::Button^ button17;
 
 
 
@@ -328,6 +329,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->button16 = (gcnew System::Windows::Forms::Button());
 			this->button15 = (gcnew System::Windows::Forms::Button());
 			this->button14 = (gcnew System::Windows::Forms::Button());
@@ -368,7 +370,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			});
 			this->toolStrip1->Location = System::Drawing::Point(0, 0);
 			this->toolStrip1->Name = L"toolStrip1";
-			this->toolStrip1->Size = System::Drawing::Size(1712, 32);
+			this->toolStrip1->Size = System::Drawing::Size(1691, 32);
 			this->toolStrip1->TabIndex = 0;
 			this->toolStrip1->Text = L"toolStrip1";
 			// 
@@ -425,6 +427,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// 色彩選項ToolStripMenuItem
 			// 
 			this->色彩選項ToolStripMenuItem->Name = L"色彩選項ToolStripMenuItem";
+			this->色彩選項ToolStripMenuItem->ShowShortcutKeys = false;
 			this->色彩選項ToolStripMenuItem->Size = System::Drawing::Size(250, 30);
 			this->色彩選項ToolStripMenuItem->Text = L"R G B";
 			this->色彩選項ToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::色彩選項ToolStripMenuItem_Click);
@@ -788,7 +791,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 				static_cast<System::Byte>(136)));
 			this->groupBox1->Location = System::Drawing::Point(11, 543);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(405, 195);
+			this->groupBox1->Size = System::Drawing::Size(427, 219);
 			this->groupBox1->TabIndex = 12;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Zoom";
@@ -797,26 +800,26 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// checkBox4
 			// 
 			this->checkBox4->AutoSize = true;
-			this->checkBox4->Location = System::Drawing::Point(115, 130);
+			this->checkBox4->Location = System::Drawing::Point(146, 130);
 			this->checkBox4->Name = L"checkBox4";
-			this->checkBox4->Size = System::Drawing::Size(97, 29);
+			this->checkBox4->Size = System::Drawing::Size(108, 29);
 			this->checkBox4->TabIndex = 11;
-			this->checkBox4->Text = L"averag";
+			this->checkBox4->Text = L"average";
 			this->checkBox4->UseVisualStyleBackColor = true;
 			// 
 			// checkBox3
 			// 
 			this->checkBox3->AutoSize = true;
-			this->checkBox3->Location = System::Drawing::Point(19, 130);
+			this->checkBox3->Location = System::Drawing::Point(7, 130);
 			this->checkBox3->Name = L"checkBox3";
-			this->checkBox3->Size = System::Drawing::Size(57, 29);
+			this->checkBox3->Size = System::Drawing::Size(133, 29);
 			this->checkBox3->TabIndex = 10;
-			this->checkBox3->Text = L"dc";
+			this->checkBox3->Text = L"decination";
 			this->checkBox3->UseVisualStyleBackColor = true;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(231, 130);
+			this->textBox2->Location = System::Drawing::Point(271, 127);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(35, 34);
 			this->textBox2->TabIndex = 9;
@@ -825,7 +828,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(231, 55);
+			this->textBox1->Location = System::Drawing::Point(271, 52);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(35, 34);
 			this->textBox1->TabIndex = 8;
@@ -835,7 +838,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// buttonzoonout
 			// 
 			this->buttonzoonout->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 10));
-			this->buttonzoonout->Location = System::Drawing::Point(284, 125);
+			this->buttonzoonout->Location = System::Drawing::Point(312, 124);
 			this->buttonzoonout->Name = L"buttonzoonout";
 			this->buttonzoonout->Size = System::Drawing::Size(115, 40);
 			this->buttonzoonout->TabIndex = 6;
@@ -846,7 +849,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// buttonzoomin
 			// 
 			this->buttonzoomin->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 10));
-			this->buttonzoomin->Location = System::Drawing::Point(284, 52);
+			this->buttonzoomin->Location = System::Drawing::Point(310, 52);
 			this->buttonzoomin->Name = L"buttonzoomin";
 			this->buttonzoomin->Size = System::Drawing::Size(115, 40);
 			this->buttonzoomin->TabIndex = 5;
@@ -857,7 +860,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// checkBox2
 			// 
 			this->checkBox2->AutoSize = true;
-			this->checkBox2->Location = System::Drawing::Point(115, 57);
+			this->checkBox2->Location = System::Drawing::Point(146, 57);
 			this->checkBox2->Name = L"checkBox2";
 			this->checkBox2->Size = System::Drawing::Size(85, 29);
 			this->checkBox2->TabIndex = 3;
@@ -867,7 +870,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(19, 57);
+			this->checkBox1->Location = System::Drawing::Point(6, 57);
 			this->checkBox1->Name = L"checkBox1";
 			this->checkBox1->Size = System::Drawing::Size(96, 29);
 			this->checkBox1->TabIndex = 2;
@@ -881,9 +884,9 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 				this->toolStripStatusLabel1,
 					this->toolStripStatusLabel2, this->toolStripStatusLabel3, this->toolStripStatusLabel4, this->toolStripStatusLabel6, this->toolStripStatusLabel5
 			});
-			this->statusStrip1->Location = System::Drawing::Point(0, 743);
+			this->statusStrip1->Location = System::Drawing::Point(0, 762);
 			this->statusStrip1->Name = L"statusStrip1";
-			this->statusStrip1->Size = System::Drawing::Size(1712, 31);
+			this->statusStrip1->Size = System::Drawing::Size(1691, 31);
 			this->statusStrip1->TabIndex = 13;
 			this->statusStrip1->Text = L"statusStrip1";
 			// 
@@ -1023,6 +1026,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->button17);
 			this->panel1->Controls->Add(this->button16);
 			this->panel1->Controls->Add(this->button15);
 			this->panel1->Controls->Add(this->button14);
@@ -1047,6 +1051,18 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->panel1->Size = System::Drawing::Size(583, 260);
 			this->panel1->TabIndex = 18;
 			this->panel1->Visible = false;
+			// 
+			// button17
+			// 
+			this->button17->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->button17->Location = System::Drawing::Point(315, 38);
+			this->button17->Name = L"button17";
+			this->button17->Size = System::Drawing::Size(126, 37);
+			this->button17->TabIndex = 34;
+			this->button17->Text = L"Outlier";
+			this->button17->UseVisualStyleBackColor = true;
+			this->button17->Click += gcnew System::EventHandler(this, &MyForm::button17_Click);
 			// 
 			// button16
 			// 
@@ -1213,7 +1229,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(90, 72);
 			this->button4->TabIndex = 20;
-			this->button4->Text = L"Origin";
+			this->button4->Text = L"Gray";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
@@ -1246,7 +1262,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1712, 774);
+			this->ClientSize = System::Drawing::Size(1712, 782);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->statusStrip1);
@@ -1284,6 +1300,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 
 		}
 #pragma endregion
+
 
 	private: System::Void openFileDialog1_FileOk(System::Object^ sender, System::ComponentModel::CancelEventArgs^ e) {
 	}
@@ -1823,9 +1840,9 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 		double final;
 		for (int i = 0; i < Display->Width; i++) {
 			for (int j = 0; j < Display->Height; j++) {
-				sum1 += pow((Display->GetPixel(i, j).R), 2);
-				sum1 += pow((Display->GetPixel(i, j).G), 2);
-				sum1 += pow((Display->GetPixel(i, j).B), 2);
+				sum1 += pow((OriginGray->GetPixel(i, j).R), 2);
+				sum1 += pow((OriginGray->GetPixel(i, j).G), 2);
+				sum1 += pow((OriginGray->GetPixel(i, j).B), 2);
 			}
 		}
 
@@ -1989,7 +2006,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 		Bitmap^ Gary = gcnew Bitmap(source->Width, source->Height);
 		for (int i = 0; i < source->Width; i++) {
 			for (int j = 0; j < source->Height; j++) {
-				int pixel = ((source->GetPixel(i, j).R) * 0.114 + (source->GetPixel(i, j).G) * 0.587 + (source->GetPixel(i, j).B) * 0.299);
+				int pixel = ((source->GetPixel(i, j).R) * 0.299 + (source->GetPixel(i, j).G) * 0.587 + (source->GetPixel(i, j).B) * 0.144);
 				Gary->SetPixel(i, j, Color::FromArgb(pixel, pixel, pixel));
 			}
 		}
@@ -2459,10 +2476,26 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 		else {
 			this->panel1->Visible = false;
 		}
+		long long sum_pixel = 0, avg_all = 0;
+
+		for (int i = 0; i < Display->Width; i++) {
+			for (int j = 0; j < Display->Height; j++) {
+				sum_pixel = sum_pixel + Display->GetPixel(i, j).R;
+			}
+		}
+		avg_all = sum_pixel / (Display->Width * Display->Height);
+		long long sum = 0;
+		for (int i = 0; i < Display->Width; i++) {
+			for (int j = 0; j < Display->Height; j++) {
+				sum = sum + pow((Display->GetPixel(i, j).R - avg_all), 2);
+			}
+		}
+		sigma = sqrt(sum / (Display->Width * Display->Height));
+
 	}
 	// Origin picture
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-		Display = source;
+		Display = OriginGray;
 		this->pictureBox_show->Image = Display;
 	}
 	// Mean filter
@@ -2624,52 +2657,7 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 	}
 	// Median filter
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		Bitmap^ extend_3 = gcnew Bitmap(Display->Width + 2, Display->Height + 2);
-		for (int i = 0; i < extend_3->Width; i++) {
-			for (int j = 0; j < extend_3->Height; j++) {
-				if ((i >= 1) && (j >= 1) && (i < extend_3->Width - 1) && (j < extend_3->Height - 1)) {
-					extend_3->SetPixel(i, j, Display->GetPixel(i - 1, j - 1));
-				}
-				else if ((i < 1) && (j >= 1) && (j < extend_3->Height - 1)) {								//放大圖圖形左邊
-					extend_3->SetPixel(i, j, Display->GetPixel(0, j - 1));
-				}
-				else if ((j >= 1) && (j < extend_3->Height - 1) && (i >= extend_3->Width - 1)) {		//放大圖圖形右邊
-					extend_3->SetPixel(i, j, Display->GetPixel(Display->Width - 1, j - 1));
-				}
-				else if ((i >= 1) && (i < extend_3->Width - 1) && (j < 1)) {								//放大圖圖形上面
-					extend_3->SetPixel(i, j, Display->GetPixel(i - 1, 0));
-				}
-				else if ((i >= 1) && (i < extend_3->Width - 1) && (j >= extend_3->Height - 1)) {		//放大圖圖形下面
-					extend_3->SetPixel(i, j, Display->GetPixel(i - 1, Display->Height - 1));
-				}
-				else {																						//剩四個角隨便填入最左上角的pixel值，若一個一個寫頗麻煩
-					extend_3->SetPixel(i, j, Display->GetPixel(0, 0));
-				}
-			}
-		}
-		Bitmap^ extend_5 = gcnew Bitmap(Display->Width + 4, Display->Height + 4);
-		for (int i = 0; i < extend_5->Width; i++) {
-			for (int j = 0; j < extend_5->Height; j++) {
-				if ((i >= 2) && (j >= 2) && (i < extend_5->Width - 2) && (j < extend_5->Height - 2)) {
-					extend_5->SetPixel(i, j, Display->GetPixel(i - 2, j - 2));
-				}
-				else if ((i < 2) && (j >= 2) && (j < extend_5->Height - 2)) {								//放大圖圖形左邊
-					extend_5->SetPixel(i, j, Display->GetPixel(0, j - 2));
-				}
-				else if ((j >= 2) && (j < extend_5->Height - 2) && (i >= extend_5->Width - 2)) {		//放大圖圖形右邊
-					extend_5->SetPixel(i, j, Display->GetPixel(Display->Width - 1, j - 2));
-				}
-				else if ((i >= 2) && (i < extend_5->Width - 2) && (j < 2)) {								//放大圖圖形上面
-					extend_5->SetPixel(i, j, Display->GetPixel(i - 2, 0));
-				}
-				else if ((i >= 2) && (i < extend_5->Width - 2) && (j >= extend_5->Height - 2)) {		//放大圖圖形下面
-					extend_5->SetPixel(i, j, Display->GetPixel(i - 2, Display->Height - 1));
-				}
-				else {																						//剩四個角隨便填入最左上角的pixel值，若一個一個寫頗麻煩
-					extend_5->SetPixel(i, j, Display->GetPixel(0, 0));
-				}
-			}
-		}
+		
 		if (radioButton1->Checked == true) {
 			Bitmap^ process = gcnew Bitmap(Display->Width, Display->Height);
 			for (int i = 0; i < Display->Width; i++) {
@@ -2810,97 +2798,105 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 	}
 	// High pass
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-		Bitmap^ process = gcnew Bitmap(Display->Width, Display->Height);
-		for (int i = 0; i < Display->Width; i++) {
-			for (int j = 0; j < Display->Height; j++) {
-				Color set = Display->GetPixel(i, j);
-				process->SetPixel(i, j, set);
-			}
-		}
-
-		Bitmap^ New = gcnew Bitmap(process->Width + 2, process->Height + 2);
-		for (int i = 0; i < New->Width; i++) {
-			for (int j = 0; j < New->Height; j++) {
-				if ((i == 0) && (j >= 1) && (j < New->Height - 1)) {
-					Color set = process->GetPixel(process->Width - 1, j - 1);
-					New->SetPixel(i, j, set);
+		Bitmap^ extend_3 = gcnew Bitmap(OriginGray->Width + 2, OriginGray->Height + 2);
+		for (int i = 0; i < extend_3->Width; i++) {
+			for (int j = 0; j < extend_3->Height; j++) {
+				if ((i >= 1) && (j >= 1) && (i < extend_3->Width - 1) && (j < extend_3->Height - 1)) {
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(i - 1, j - 1));
 				}
-				else if ((i == New->Width - 1) && (j >= 1) && (j < New->Height - 1)) {
-					Color set = process->GetPixel(0, j - 1);
-					New->SetPixel(i, j, set);
+				else if ((i < 1) && (j >= 1) && (j < extend_3->Height - 1)) {								//放大圖圖形左邊
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(0, j - 1));
 				}
-				else if ((j != 0) && (j != New->Height - 1)) {
-					Color set = process->GetPixel(i - 1, j - 1);
-					New->SetPixel(i, j, set);
+				else if ((j >= 1) && (j < extend_3->Height - 1) && (i >= extend_3->Width - 1)) {		//放大圖圖形右邊
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(OriginGray->Width - 1, j - 1));
+				}
+				else if ((i >= 1) && (i < extend_3->Width - 1) && (j < 1)) {								//放大圖圖形上面
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(i - 1, 0));
+				}
+				else if ((i >= 1) && (i < extend_3->Width - 1) && (j >= extend_3->Height - 1)) {		//放大圖圖形下面
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(i - 1, OriginGray->Height - 1));
+				}
+				else {																						//剩四個角隨便填入最左上角的pixel值，若一個一個寫頗麻煩
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(0, 0));
 				}
 			}
 		}
-		for (int j = 0; j < New->Height; j += New->Height - 1) {
-			for (int i = 0; i < New->Width; i++) {
-				if (j == 0) {
-					Color set = New->GetPixel(i, New->Height - 2);
-					New->SetPixel(i, j, set);
+		Bitmap^ extend_5 = gcnew Bitmap(OriginGray->Width + 4, OriginGray->Height + 4);
+		for (int i = 0; i < extend_5->Width; i++) {
+			for (int j = 0; j < extend_5->Height; j++) {
+				if ((i >= 2) && (j >= 2) && (i < extend_5->Width - 2) && (j < extend_5->Height - 2)) {
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(i - 2, j - 2));
 				}
-				else {
-					Color set = New->GetPixel(i, 1);
-					New->SetPixel(i, j, set);
+				else if ((i < 2) && (j >= 2) && (j < extend_5->Height - 2)) {								//放大圖圖形左邊
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(0, j - 2));
 				}
-
+				else if ((j >= 2) && (j < extend_5->Height - 2) && (i >= extend_5->Width - 2)) {		//放大圖圖形右邊
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(OriginGray->Width - 1, j - 2));
+				}
+				else if ((i >= 2) && (i < extend_5->Width - 2) && (j < 2)) {								//放大圖圖形上面
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(i - 2, 0));
+				}
+				else if ((i >= 2) && (i < extend_5->Width - 2) && (j >= extend_5->Height - 2)) {		//放大圖圖形下面
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(i - 2, OriginGray->Height - 1));
+				}
+				else {																						//剩四個角隨便填入最左上角的pixel值，若一個一個寫頗麻煩
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(0, 0));
+				}
 			}
 		}
-
-		float sum1 = 0;
-		float Max, Min;
-		for (int i = 1; i <= (New->Width - 2); i++) {
-			for (int j = 1; j <= (New->Height - 2); j++) {
-				for (int x = (i - 1); x <= (i + 1); x++) {
-					for (int y = (j - 1); y <= (j + 1); y++) {
-						if ((x == i) && (y == j)) {
-							sum1 += (8 * (New->GetPixel(x, y).R) / 9);
-						}
-						else {
-							sum1 += -((New->GetPixel(x, y).R) / 9);
-						}
-					}
-				}
-				if (i == 1 && j == 1) {
-					Max = sum1;
-					Min = sum1;
-				}
-				if (sum1 >= Max) {
-					Max = sum1;
-				}
-				else if (sum1 < Min) {
-					Min = sum1;
-				}
-				sum1 = 0;
-			}
-		}
-
-		sum1 = 0;
-		for (int i = 1; i <= (New->Width - 2); i++) {
-			for (int j = 1; j <= (New->Height - 2); j++) {
-				for (int x = (i - 1); x <= (i + 1); x++) {
-					for (int y = (j - 1); y <= (j + 1); y++) {
-						if ((x == i) && (y == j)) {
-							sum1 += (8 * (New->GetPixel(x, y).R) / 9);
-
-						}
-						else {
-							sum1 += -((New->GetPixel(x, y).R) / 9);
-
+		if (radioButton1->Checked == true) {
+			float mask_3[9] = { -1,-1,-1,-1,8,-1,-1,-1,-1 };
+			Bitmap^ highpass_3 = gcnew Bitmap(Display->Width, Display->Height);
+			for (int i = 1; i < extend_3->Width - 1; i++) {
+				for (int j = 1; j < extend_3->Height - 1; j++) {
+					float row[9] = { 0 };
+					int	a = 0;
+					for (int m = -1; m <= 1; m++) {
+						for (int n = -1; n <= 1; n++) {
+							row[a] = extend_3->GetPixel(i + m, j + n).R;
+							a++;
 						}
 					}
+					float sum = 0;
+					for (int q = 0; q < 9; q++) {
+						sum = sum + round(row[q] * mask_3[q] / 9);		//對比拉伸原理將各個pixel值分布在0~255，不管濾波器值設多少，都是/9
+					}													//因為有負值，所以幾乎整張變黑
+					if (sum < 0) { sum = 0; }
+					if (sum > 255) { sum = 255; }
+					highpass_3->SetPixel(i - 1, j - 1, Color::FromArgb((int)sum, (int)sum, (int)sum));
 				}
-				sum1 = ((sum1 - Min) / (Max - Min)) * 255;
-				Color set = Color::FromArgb((int)sum1, (int)sum1, (int)sum1);
-				sum1 = 0;
-				process->SetPixel(i - 1, j - 1, set);
 			}
+			Display = highpass_3;
+			pictureBox_show->Image = highpass_3;
+			SNR2();
 		}
-		Display = process;
-		pictureBox_show->Image = Display;
-		SNR2();
+		else if (radioButton2->Checked == true) {
+			float mask_5[25] = { -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,24,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1 };
+			Bitmap^ highpass_5 = gcnew Bitmap(Display->Width, Display->Height);
+			for (int i = 2; i < extend_5->Width - 2; i++) {
+				for (int j = 2; j < extend_5->Height - 2; j++) {
+					float row[25] = { 0 };
+					int	a = 0;
+					for (int m = -2; m <= 2; m++) {
+						for (int n = -2; n <= 2; n++) {
+							row[a] = extend_5->GetPixel(i + m, j + n).R;
+							a++;
+						}
+					}
+					float sum = 0;
+					for (int q = 0; q < 25; q++) {
+						sum = sum + round(row[q] * mask_5[q] / 25);		//對比拉伸原理將各個pixel值分布在0~255
+					}
+					if (sum < 0) { sum = 0; }
+					if (sum > 255) { sum = 255; }
+					highpass_5->SetPixel(i - 2, j - 2, Color::FromArgb((int)sum, (int)sum, (int)sum));
+				}
+			}
+			Display = highpass_5;
+			pictureBox_show->Image = highpass_5;
+			SNR2();
+		}
+
 	}
 	// Hight boost
 	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -2997,6 +2993,121 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 		Display = process;
 		pictureBox_show->Image = Display;
 		SNR2();
+	}
+	// outlier
+	public: void clasigma() {
+		sigma = 0;
+		//計算圖片標準差
+		long long sum_pixel = 0, avg_all = 0;
+		for (int i = 0; i < Display->Width; i++) {
+			for (int j = 0; j < Display->Height; j++) {
+				sum_pixel = sum_pixel + Display->GetPixel(i, j).R;
+			}
+		}
+		avg_all = sum_pixel / (Display->Width * Display->Height);
+		long long sum = 0;
+		for (int i = 0; i < Display->Width; i++) {
+			for (int j = 0; j < Display->Height; j++) {
+				sum = sum + pow((Display->GetPixel(i, j).R - avg_all), 2);
+			}
+		}
+		sigma = sqrt(sum / (Display->Width * Display->Height));
+	}
+	
+	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
+		clasigma();
+		Bitmap^ extend_3 = gcnew Bitmap(OriginGray->Width + 2, OriginGray->Height + 2);
+		for (int i = 0; i < extend_3->Width; i++) {
+			for (int j = 0; j < extend_3->Height; j++) {
+				if ((i >= 1) && (j >= 1) && (i < extend_3->Width - 1) && (j < extend_3->Height - 1)) {
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(i - 1, j - 1));
+				}
+				else if ((i < 1) && (j >= 1) && (j < extend_3->Height - 1)) {								//放大圖圖形左邊
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(0, j - 1));
+				}
+				else if ((j >= 1) && (j < extend_3->Height - 1) && (i >= extend_3->Width - 1)) {		//放大圖圖形右邊
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(OriginGray->Width - 1, j - 1));
+				}
+				else if ((i >= 1) && (i < extend_3->Width - 1) && (j < 1)) {								//放大圖圖形上面
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(i - 1, 0));
+				}
+				else if ((i >= 1) && (i < extend_3->Width - 1) && (j >= extend_3->Height - 1)) {		//放大圖圖形下面
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(i - 1, OriginGray->Height - 1));
+				}
+				else {																						//剩四個角隨便填入最左上角的pixel值，若一個一個寫頗麻煩
+					extend_3->SetPixel(i, j, OriginGray->GetPixel(0, 0));
+				}
+			}
+		}
+		Bitmap^ extend_5 = gcnew Bitmap(OriginGray->Width + 4, OriginGray->Height + 4);
+		for (int i = 0; i < extend_5->Width; i++) {
+			for (int j = 0; j < extend_5->Height; j++) {
+				if ((i >= 2) && (j >= 2) && (i < extend_5->Width - 2) && (j < extend_5->Height - 2)) {
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(i - 2, j - 2));
+				}
+				else if ((i < 2) && (j >= 2) && (j < extend_5->Height - 2)) {								//放大圖圖形左邊
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(0, j - 2));
+				}
+				else if ((j >= 2) && (j < extend_5->Height - 2) && (i >= extend_5->Width - 2)) {		//放大圖圖形右邊
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(OriginGray->Width - 1, j - 2));
+				}
+				else if ((i >= 2) && (i < extend_5->Width - 2) && (j < 2)) {								//放大圖圖形上面
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(i - 2, 0));
+				}
+				else if ((i >= 2) && (i < extend_5->Width - 2) && (j >= extend_5->Height - 2)) {		//放大圖圖形下面
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(i - 2, OriginGray->Height - 1));
+				}
+				else {																						//剩四個角隨便填入最左上角的pixel值，若一個一個寫頗麻煩
+					extend_5->SetPixel(i, j, OriginGray->GetPixel(0, 0));
+				}
+			}
+		}
+		if (radioButton1->Checked == true) {
+			Bitmap^ outlier_3 = gcnew Bitmap(Display->Width, Display->Height);
+			for (int i = 1; i < extend_3->Width - 1; i++) {
+				for (int j = 1; j < extend_3->Height - 1; j++) {
+					int sum = 0;
+					for (int m = -1; m <= 1; m++) {
+						for (int n = -1; n <= 1; n++) {
+							sum = sum + extend_3->GetPixel(i + m, j + n).R;
+						}
+					}
+					int Average = round(sum - extend_3->GetPixel(i, j).R) / 8;
+					if (abs(extend_3->GetPixel(i, j).R - Average) > sigma) {
+						outlier_3->SetPixel(i - 1, j - 1, Color::FromArgb(Average, Average, Average));		//中間值跟平均大於標準差，則為平均
+					}
+					else {
+						outlier_3->SetPixel(i - 1, j - 1, extend_3->GetPixel(i, j));						//中間值跟平均小於標準差，則為間中值
+					}
+				}
+			}
+			Display = outlier_3;
+			pictureBox_show->Image = outlier_3;
+			SNR2();
+		}
+		else if (radioButton2->Checked == true) {
+			Bitmap^ outlier_5 = gcnew Bitmap(Display->Width, Display->Height);
+			for (int i = 2; i < extend_5->Width - 2; i++) {
+				for (int j = 2; j < extend_5->Height - 2; j++) {
+					int sum = 0;
+					for (int m = -2; m <= 2; m++) {
+						for (int n = -2; n <= 2; n++) {
+							sum = sum + extend_5->GetPixel(i + m, j + n).R;
+						}
+					}
+					int Average = round(sum - extend_5->GetPixel(i, j).R) / 24;
+					if (abs(extend_5->GetPixel(i, j).R - Average) >= sigma) {
+						outlier_5->SetPixel(i - 2, j - 2, Color::FromArgb(Average, Average, Average));
+					}
+					else {
+						outlier_5->SetPixel(i - 2, j - 2, extend_5->GetPixel(i, j));
+					}
+				}
+			}
+			Display = outlier_5;
+			pictureBox_show->Image = Display;
+			SNR2();
+		}
 	}
 	// Noise
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {

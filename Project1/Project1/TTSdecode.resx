@@ -239,4 +239,20 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>225, 17</value>
   </metadata>
+  <data name="檔案ToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        5AAAAOQBXaJ52AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIaSURBVFhHxZa/
+        axNhGMefQeuPQaEFEeeOndzcukmld9hBXEScSxG6iFupg7ODf0EFCeJQLIo0lzSlS4U0l9xdEvOj3HtJ
+        wChoq3dmEfr6Pr2mXN8+2lbsk+HzDvd93+fzPe4SDqSUA4W8yEm8WO4kpF1HUT3EsuOB5T3SD/6NSisc
+        KwfRCy+ItrxWNEvt6RMvaeelkskjWIBX5SF9QBJH9G4o6RvFjkLu8bPa+TFC7UfiJe2mNBmN5a7C+/Kw
+        PkTd5c2yiHIJqUY4r5/pEy/HLRBTV4/lzlDGnUrVvs24QbRBSw/w9dpK5S5Yzu1dlp1bsJS/+E8Fzlqe
+        fJBv1z6IsEOI/shDu1M/MMtyn52owIWMtzNrtz1bhF8owVEU1LkzqnxiZupYBS5nK7+euN1iCd9oYvBJ
+        uJ9vNROz4wIT641LV3PVpeFcJUwyuvbx+5z3qfZ2c7v3bnNb/g9eN7Y+j+zNRye6wbBFUyEHRBML9LSL
+        nPSwQFe7yElXFfDrRMCEXwezKPJ0ePqgGx9BVg8YyaoCwSIRMBEsglEUC3TIgHKDaYvnZMgAumHSDp5S
+        IQfoBqPgP6ZCFpQbfwXThwI+ptX/QHCPCFhAN5iFlkmFHKBbvYT+OBVygG4wSuI6FbKg3GButEfJkAF0
+        w1SpeYUKOUA3jK/456mQA3TvfpQaBZGhNpwuwer+VzEy0Wicw0YcoKvv3S8wGCT8BuLouN0za32VAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
 </root>

@@ -113,6 +113,8 @@ namespace Project1 {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Video::typeid));
 			this->toolStrip1 = (gcnew System::Windows::Forms::ToolStrip());
 			this->toolStripButton1 = (gcnew System::Windows::Forms::ToolStripButton());
+			this->toolStripSplitButton1 = (gcnew System::Windows::Forms::ToolStripSplitButton());
+			this->decodeTSSToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
@@ -144,8 +146,6 @@ namespace Project1 {
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->trackBar1 = (gcnew System::Windows::Forms::TrackBar());
-			this->toolStripSplitButton1 = (gcnew System::Windows::Forms::ToolStripSplitButton());
-			this->decodeTSSToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
@@ -175,14 +175,32 @@ namespace Project1 {
 			// 
 			// toolStripButton1
 			// 
-			this->toolStripButton1->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Text;
 			this->toolStripButton1->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
+			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripButton1.Image")));
 			this->toolStripButton1->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton1->Name = L"toolStripButton1";
-			this->toolStripButton1->Size = System::Drawing::Size(48, 29);
+			this->toolStripButton1->Size = System::Drawing::Size(68, 29);
 			this->toolStripButton1->Text = L"File";
 			this->toolStripButton1->Click += gcnew System::EventHandler(this, &Video::toolStripButton1_Click);
+			// 
+			// toolStripSplitButton1
+			// 
+			this->toolStripSplitButton1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->decodeTSSToolStripMenuItem });
+			this->toolStripSplitButton1->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->toolStripSplitButton1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripSplitButton1.Image")));
+			this->toolStripSplitButton1->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->toolStripSplitButton1->Name = L"toolStripSplitButton1";
+			this->toolStripSplitButton1->Size = System::Drawing::Size(124, 29);
+			this->toolStripSplitButton1->Text = L"Decode";
+			// 
+			// decodeTSSToolStripMenuItem
+			// 
+			this->decodeTSSToolStripMenuItem->Name = L"decodeTSSToolStripMenuItem";
+			this->decodeTSSToolStripMenuItem->Size = System::Drawing::Size(224, 30);
+			this->decodeTSSToolStripMenuItem->Text = L"Decode TSS";
+			this->decodeTSSToolStripMenuItem->Click += gcnew System::EventHandler(this, &Video::decodeTSSToolStripMenuItem_Click);
 			// 
 			// pictureBox1
 			// 
@@ -540,25 +558,6 @@ namespace Project1 {
 			this->trackBar1->Size = System::Drawing::Size(341, 56);
 			this->trackBar1->TabIndex = 32;
 			this->trackBar1->Scroll += gcnew System::EventHandler(this, &Video::trackBar1_Scroll_1);
-			// 
-			// toolStripSplitButton1
-			// 
-			this->toolStripSplitButton1->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Text;
-			this->toolStripSplitButton1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->decodeTSSToolStripMenuItem });
-			this->toolStripSplitButton1->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(136)));
-			this->toolStripSplitButton1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"toolStripSplitButton1.Image")));
-			this->toolStripSplitButton1->ImageTransparentColor = System::Drawing::Color::Magenta;
-			this->toolStripSplitButton1->Name = L"toolStripSplitButton1";
-			this->toolStripSplitButton1->Size = System::Drawing::Size(104, 29);
-			this->toolStripSplitButton1->Text = L"Decode";
-			// 
-			// decodeTSSToolStripMenuItem
-			// 
-			this->decodeTSSToolStripMenuItem->Name = L"decodeTSSToolStripMenuItem";
-			this->decodeTSSToolStripMenuItem->Size = System::Drawing::Size(224, 30);
-			this->decodeTSSToolStripMenuItem->Text = L"Decode TSS";
-			this->decodeTSSToolStripMenuItem->Click += gcnew System::EventHandler(this, &Video::decodeTSSToolStripMenuItem_Click);
 			// 
 			// Video
 			// 

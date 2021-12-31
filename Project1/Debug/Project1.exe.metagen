@@ -70,6 +70,7 @@ Class Project1.BitPlane: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     System.Windows.Forms.PictureBox pictureBox10 : Public
     System.Windows.Forms.PictureBox pictureBox11 : Public
   Methods:
+    LOADPCXDATA(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SNR(Bitmap, Bitmap): PrivateScope, Public, HideBySig
 Class Project1.BitDepth: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
@@ -203,6 +204,7 @@ Class Project1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   Fields:
     System.Drawing.Bitmap Display : Public
     System.Drawing.Bitmap OriginGray : Public
+    Int32 sigma : Public
     System.Drawing.Bitmap source : Public, Static
   Methods:
     LOADPCXDATA(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
@@ -215,6 +217,7 @@ Class Project1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Gary(): PrivateScope, Public, HideBySig
     GaryInvert(): PrivateScope, Public, HideBySig
     RGBtoHSI(Int32): PrivateScope, Public, HideBySig
+    clasigma(): PrivateScope, Public, HideBySig
 Class Project1.splash_screen: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

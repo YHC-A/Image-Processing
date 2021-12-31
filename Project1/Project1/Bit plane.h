@@ -10,6 +10,7 @@ namespace Project1 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::IO;
 
 	/// <summary>
 	/// BitPlaneSlicing 的摘要
@@ -80,6 +81,56 @@ namespace Project1 {
 		/// 設計工具所需的變數。
 		/// </summary>
 		System::ComponentModel::Container^ components;
+		/// PCX data
+		ref struct PCXHEAD {
+			String^ Manufacturer;
+			short int Version;
+			String^ Encoding;
+			short int BitsPerPixel;
+			short int Xmin;
+			short int Ymin;
+			short int Xmax;
+			short int Ymax;
+			short int Hdpi;
+			short int Vdpi;
+			Bitmap^ Colormap;
+			unsigned char Reserved;
+			unsigned char Nplanes;
+			short int BytesPerLine;
+			String^ PaletteInfo;
+			short int HscreenSize;
+			short int VscreenSize;
+			short int width;
+			short int height;
+		};
+		ref struct PCXPALETTE {
+			Bitmap^ palette;
+			Bitmap^ draw_Colormap;
+		};
+		// BMP file data
+		ref struct BMPHEAD {
+			String^ Head;
+			long int FileSize;
+			long int ImageSize;
+			long int StartingAddress;
+			String^ DIB;
+			long int ColorPlane;
+			long int ColorsUsed;
+			long int ColorsImportant;
+			long int BitsPerPixel;
+			long int CompressionMethod;
+			long int Hdpi;
+			long int Vdpi;
+			Bitmap^ Colormap;
+			unsigned char Reserved;
+			String^ PaletteInfo;
+			long int width;
+			long int height;
+		};
+		ref struct BMPPALETTE {
+			Bitmap^ palette2;
+			Bitmap^ Colormap3;
+		};
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -517,6 +568,207 @@ namespace Project1 {
 
 		}
 #pragma endregion
+	//PCX data
+	public:void LOADPCXDATA(String^ path, PCXHEAD% pcxdata, PCXPALETTE% Palette)
+	{
+		FileStream^ fs = gcnew  FileStream(path, FileMode::Open);
+		BinaryReader^ br = gcnew  BinaryReader(fs);
+		int row = 0, column = 0, color_number = 0;
+		int red, green, blue;
+		short int RGB[256][3];
+
+		// header file 
+		for (br->BaseStream->Position = 0; br->BaseStream->Position < 74;) {
+			int c1, c2;
+
+			switch (br->BaseStream->Position)
+			{
+			case 0:
+				if (br->ReadByte() == 10) {
+					pcxdata.Manufacturer = "Zshoft.pcx";
+				}
+				else
+					pcxdata.Manufacturer = "Erro!!!";
+				break;
+
+			case 1:
+				pcxdata.Version = br->ReadByte();
+				break;
+
+			case 2:
+				if (br->ReadByte() == 1) {
+					pcxdata.Encoding = "RLE";
+				}
+				break;
+
+			case 3:
+				pcxdata.BitsPerPixel = br->ReadByte();
+				break;
+
+			case 4:
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.Xmin = c1 + c2 * 256;
+
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.Ymin = c1 + c2 * 256;
+
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.Xmax = c1 + c2 * 256;
+
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.Ymax = c1 + c2 * 256;
+				break;
+
+			case 12: {
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.Hdpi = c1 + c2 * 256;
+				break;
+			}
+			case 14: {
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.Vdpi = c1 + c2 * 256;
+				break;
+			}
+
+			case 16: {//檔頭預留了48bytes,16種顏色//
+				pcxdata.Colormap = gcnew Bitmap(160, 160);
+				Color CM_color;
+				Graphics^ CM_graphics = Graphics::FromImage(pcxdata.Colormap);	//不同層
+				for (row = 0; row < 4; row++) {
+					for (column = 0; column < 4; column++) {
+						red = br->ReadByte();
+						green = br->ReadByte();
+						blue = br->ReadByte();
+						CM_color = Color::FromArgb(red, green, blue);	//不同層
+						//brushes的顏色已被定義，所以用solidbrush去設定得到的顏色//
+						SolidBrush^ brush = gcnew SolidBrush(CM_color);//同層
+						Rectangle rectangle((column * 4), (row * 4), 4, 4);//初始x,y座標，長度和寬度數值//
+						CM_graphics->FillRectangle(brush, rectangle);
+					}
+				}
+			}
+
+			case 64: {
+				pcxdata.Reserved = br->ReadByte();
+				break;
+			}
+
+			case 65: {
+				pcxdata.Nplanes = br->ReadByte();
+				break;
+			}
+
+			case 66: {
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.BytesPerLine = c1 + c2 * 256;
+				break;
+			}
+			case 68: {
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				if ((c1 + c2 * 256) == 1)
+					pcxdata.PaletteInfo = "Color.BW";
+				else
+					pcxdata.PaletteInfo = "GrayScale";
+
+				break;
+
+			}
+			case 70: {
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.HscreenSize = c1 + c2 * 256;
+
+				break;
+			}
+			case 72: {
+				c1 = br->ReadByte();
+				c2 = br->ReadByte();
+				pcxdata.VscreenSize = c1 + c2 * 256;
+
+				break;
+			}
+			}
+			pcxdata.width = pcxdata.Xmax - pcxdata.Xmin + 1;
+			pcxdata.height = pcxdata.Ymax - pcxdata.Ymin + 1;
+		}
+
+		//顯示標頭檔以及調色盤
+
+		// End of file
+
+		// read VGA palette
+
+		Color get3;
+		Palette.draw_Colormap = gcnew Bitmap(256, 256);
+		Graphics^ CM2_graphics = Graphics::FromImage(Palette.draw_Colormap);
+		SolidBrush^ brush;
+		br->BaseStream->Position = ((br->BaseStream->Length) - 768);
+
+		for (row = 0; row < 16; row++) {
+			for (column = 0; column < 16; column++) {
+				RGB[color_number][0] = br->ReadByte();
+				RGB[color_number][1] = br->ReadByte();
+				RGB[color_number][2] = br->ReadByte();
+				get3 = Color::FromArgb(RGB[color_number][0], RGB[color_number][1], RGB[color_number][2]);
+				brush = gcnew SolidBrush(get3);
+				Rectangle rectangle((row * 16), (column * 16), 16, 16);
+				CM2_graphics->FillRectangle(brush, rectangle);
+				color_number++;
+			}
+		}
+
+
+		//128之後是圖像，上色
+		Palette.palette = gcnew Bitmap(pcxdata.width, pcxdata.height);
+		Graphics^ Palette_graphics = Graphics::FromImage(Palette.palette);
+		int check;
+		int x = 0, y = 0;
+		br->BaseStream->Position = 128;
+		while (y < pcxdata.height) {
+			if (((check = br->ReadByte()) & 0xc0) == 0xC0) {
+				int duplicate_count;
+				duplicate_count = (check & 0x3F);
+				check = br->ReadByte();
+				Color newColor = Color::FromArgb(RGB[check][0], RGB[check][1], RGB[check][2]);
+				for (; duplicate_count > 0; duplicate_count--) {
+					Palette.palette->SetPixel(x, y, newColor);
+					x++;
+					if (x == pcxdata.width) {
+						x = 0;
+						y++;
+					}
+					if (y == pcxdata.height) {
+						break;
+					}
+				}
+				if (y == pcxdata.height) {
+					break;
+				}
+			}
+			else {
+				Color newColor = Color::FromArgb(RGB[check][0], RGB[check][1], RGB[check][2]);
+				Palette.palette->SetPixel(x, y, newColor);
+				++x;
+				if (x == pcxdata.width) {
+					x = 0;
+					++y;
+				}
+				if (y == pcxdata.height) {
+					break;
+				}
+			}
+		}
+		fs->Close();
+	}
+
 	// SNR
 	public:double SNR(Bitmap^ scr1, Bitmap^ result) {
 
@@ -623,28 +875,37 @@ namespace Project1 {
 		pictureBox10->Image = result;
 		SNR(scr1, result);
 	}
-		   //匯入浮水印
+	//匯入浮水印
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		//宣告點陣圖的格式 
-		Bitmap^ watermark;
-		//new一個新的openFileDialog1開啟檔案
 		OpenFileDialog^ openFileDialog1 = gcnew OpenFileDialog;
-		//預設檔案名稱為空值
-		openFileDialog1->FileName = "";
-		//設定跳出選擇視窗的標題名稱
-		openFileDialog1->Title = "載入影像";
-		if (openFileDialog1->ShowDialog() == System::Windows::Forms::DialogResult::OK && openFileDialog1->FileName->Length > 0) {
-			watermark = gcnew Bitmap(openFileDialog1->FileName);//將選擇的影像載入至bitmap中
-			for (int i = 0; i < watermark->Width; i++) {
-				for (int j = 0; j < watermark->Height; j++) {
-					int pixel = watermark->GetPixel(i, j).R;
-					if (pixel > 127.5) { watermark->SetPixel(i, j, Color::FromArgb(255, 255, 255)); }
-					else if (pixel < 127.5) { watermark->SetPixel(i, j, Color::FromArgb(0, 0, 0)); }
-				}
+		if (openFileDialog1->ShowDialog() == System::Windows::Forms::DialogResult::OK && openFileDialog1->FileName->Length > 0)
+		{
+			char a[2] = ".";
+			array<Char>^ dot = (gcnew String(a))->ToCharArray();
+			cli::array<String^>^ result = openFileDialog1->FileName->Split(dot, StringSplitOptions::RemoveEmptyEntries);
+			if (result[1] == "pcx") {
+				PCXHEAD pcx_head;
+				PCXPALETTE pcx_palette;
+				LOADPCXDATA(openFileDialog1->FileName, pcx_head, pcx_palette);
+				Watermark = pcx_palette.palette;
 			}
-			Watermark = watermark;
-			pictureBox11->Image = Watermark;
 		}
+
+		Bitmap^ watermark = gcnew Bitmap(Watermark ->Width, Watermark->Height);
+		for (int i = 0; i < (Watermark->Width); i++) {
+			for (int j = 0; j < (Watermark->Height); j++) {
+				Color pixel = Watermark->GetPixel(i, j);
+				int r, g, b, gs;
+				r = pixel.R;
+				g = pixel.G;
+				b = pixel.B;
+				gs = 0.299 * r + 0.587 * g + 0.114 * b;///R.G.B to gray
+				Color paint = Color::FromArgb(gs, gs, gs);
+				watermark->SetPixel(i, j, paint);
+			}
+		}
+		Watermark = watermark;  //Watermark = 開啟圖檔的灰階
+		pictureBox11->Image = Watermark;
 	}
 
 	//	watermark
