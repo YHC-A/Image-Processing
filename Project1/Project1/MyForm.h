@@ -150,6 +150,8 @@ private: System::Windows::Forms::Button^ button16;
 private: System::Windows::Forms::ToolStripStatusLabel^ toolStripStatusLabel6;
 private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 private: System::Windows::Forms::Button^ button17;
+private: System::Windows::Forms::Button^ button18;
+private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 
 
 
@@ -270,6 +272,7 @@ private: System::Windows::Forms::Button^ button17;
 			this->saveFileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripDropDownButton2 = (gcnew System::Windows::Forms::ToolStripDropDownButton());
 			this->色彩選項ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->rGBInvertToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->灰階ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->負片ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->colorBitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -329,6 +332,7 @@ private: System::Windows::Forms::Button^ button17;
 			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->button18 = (gcnew System::Windows::Forms::Button());
 			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->button16 = (gcnew System::Windows::Forms::Button());
 			this->button15 = (gcnew System::Windows::Forms::Button());
@@ -370,7 +374,7 @@ private: System::Windows::Forms::Button^ button17;
 			});
 			this->toolStrip1->Location = System::Drawing::Point(0, 0);
 			this->toolStrip1->Name = L"toolStrip1";
-			this->toolStrip1->Size = System::Drawing::Size(1691, 32);
+			this->toolStrip1->Size = System::Drawing::Size(1712, 32);
 			this->toolStrip1->TabIndex = 0;
 			this->toolStrip1->Text = L"toolStrip1";
 			// 
@@ -412,9 +416,9 @@ private: System::Windows::Forms::Button^ button17;
 			// 
 			// toolStripDropDownButton2
 			// 
-			this->toolStripDropDownButton2->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+			this->toolStripDropDownButton2->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
 				this->色彩選項ToolStripMenuItem,
-					this->灰階ToolStripMenuItem, this->負片ToolStripMenuItem, this->colorBitToolStripMenuItem
+					this->rGBInvertToolStripMenuItem, this->灰階ToolStripMenuItem, this->負片ToolStripMenuItem, this->colorBitToolStripMenuItem
 			});
 			this->toolStripDropDownButton2->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(136)));
@@ -431,6 +435,13 @@ private: System::Windows::Forms::Button^ button17;
 			this->色彩選項ToolStripMenuItem->Size = System::Drawing::Size(250, 30);
 			this->色彩選項ToolStripMenuItem->Text = L"R G B";
 			this->色彩選項ToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::色彩選項ToolStripMenuItem_Click);
+			// 
+			// rGBInvertToolStripMenuItem
+			// 
+			this->rGBInvertToolStripMenuItem->Name = L"rGBInvertToolStripMenuItem";
+			this->rGBInvertToolStripMenuItem->Size = System::Drawing::Size(250, 30);
+			this->rGBInvertToolStripMenuItem->Text = L"RGB invert";
+			this->rGBInvertToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::rGBInvertToolStripMenuItem_Click);
 			// 
 			// 灰階ToolStripMenuItem
 			// 
@@ -493,21 +504,21 @@ private: System::Windows::Forms::Button^ button17;
 			// cutToolStripMenuItem
 			// 
 			this->cutToolStripMenuItem->Name = L"cutToolStripMenuItem";
-			this->cutToolStripMenuItem->Size = System::Drawing::Size(222, 30);
+			this->cutToolStripMenuItem->Size = System::Drawing::Size(224, 30);
 			this->cutToolStripMenuItem->Text = L"Cut";
 			this->cutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::cutToolStripMenuItem_Click_1);
 			// 
 			// overlapToolStripMenuItem
 			// 
 			this->overlapToolStripMenuItem->Name = L"overlapToolStripMenuItem";
-			this->overlapToolStripMenuItem->Size = System::Drawing::Size(222, 30);
-			this->overlapToolStripMenuItem->Text = L"overlap";
+			this->overlapToolStripMenuItem->Size = System::Drawing::Size(224, 30);
+			this->overlapToolStripMenuItem->Text = L"Overlap";
 			this->overlapToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::overlapToolStripMenuItem_Click);
 			// 
 			// transparencyToolStripMenuItem
 			// 
 			this->transparencyToolStripMenuItem->Name = L"transparencyToolStripMenuItem";
-			this->transparencyToolStripMenuItem->Size = System::Drawing::Size(222, 30);
+			this->transparencyToolStripMenuItem->Size = System::Drawing::Size(224, 30);
 			this->transparencyToolStripMenuItem->Text = L"Transparency";
 			this->transparencyToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::transparencyToolStripMenuItem_Click);
 			// 
@@ -886,7 +897,7 @@ private: System::Windows::Forms::Button^ button17;
 			});
 			this->statusStrip1->Location = System::Drawing::Point(0, 762);
 			this->statusStrip1->Name = L"statusStrip1";
-			this->statusStrip1->Size = System::Drawing::Size(1691, 31);
+			this->statusStrip1->Size = System::Drawing::Size(1712, 31);
 			this->statusStrip1->TabIndex = 13;
 			this->statusStrip1->Text = L"statusStrip1";
 			// 
@@ -1004,7 +1015,7 @@ private: System::Windows::Forms::Button^ button17;
 			this->radioButton2->AutoSize = true;
 			this->radioButton2->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
-			this->radioButton2->Location = System::Drawing::Point(3, 150);
+			this->radioButton2->Location = System::Drawing::Point(4, 157);
 			this->radioButton2->Name = L"radioButton2";
 			this->radioButton2->Size = System::Drawing::Size(82, 29);
 			this->radioButton2->TabIndex = 16;
@@ -1026,6 +1037,7 @@ private: System::Windows::Forms::Button^ button17;
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->button18);
 			this->panel1->Controls->Add(this->button17);
 			this->panel1->Controls->Add(this->button16);
 			this->panel1->Controls->Add(this->button15);
@@ -1051,6 +1063,18 @@ private: System::Windows::Forms::Button^ button17;
 			this->panel1->Size = System::Drawing::Size(583, 260);
 			this->panel1->TabIndex = 18;
 			this->panel1->Visible = false;
+			// 
+			// button18
+			// 
+			this->button18->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->button18->Location = System::Drawing::Point(437, 38);
+			this->button18->Name = L"button18";
+			this->button18->Size = System::Drawing::Size(126, 37);
+			this->button18->TabIndex = 35;
+			this->button18->Text = L"Laplacian ";
+			this->button18->UseVisualStyleBackColor = true;
+			this->button18->Click += gcnew System::EventHandler(this, &MyForm::button18_Click);
 			// 
 			// button17
 			// 
@@ -1262,7 +1286,7 @@ private: System::Windows::Forms::Button^ button17;
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1712, 782);
+			this->ClientSize = System::Drawing::Size(1733, 782);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->statusStrip1);
@@ -1997,6 +2021,20 @@ private: System::Windows::Forms::Button^ button17;
 		return B;
 	}
 
+	// RGB invert
+	private: System::Void rGBInvertToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		Bitmap^ RGB_Invert;
+		RGB_Invert = gcnew Bitmap(source->Width, source->Height);
+		for (int i = 0; i < source->Width; i++) {
+			for (int j = 0; j < source->Height; j++) {
+				RGB_Invert->SetPixel(i, j, Color::FromArgb(-(source->GetPixel(i, j).R) + 255, -(source->GetPixel(i, j).G) + 255, -(source->GetPixel(i, j).B) + 255));
+			}
+		}
+		Display = RGB_Invert;
+		pictureBox_show->Image = Display;
+		SNR(source, Display);
+	}
+
 	private: System::Void 灰階ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		OriginGray = Gary();
 		Display = OriginGray;
@@ -2118,6 +2156,7 @@ private: System::Windows::Forms::Button^ button17;
 			}
 			Display = simplezoomin;
 			pictureBox_show->Image = Display;
+			this->panel1->Location = Point(pictureBox_show->Location.X + Display->Width + 50, this->panel1->Location.Y);
 		}
 		else if ((this->checkBox1->Checked == false) && this->checkBox2->Checked == true) {
 			double times = System::Convert::ToDouble(textBox1->Text);
@@ -2188,6 +2227,7 @@ private: System::Windows::Forms::Button^ button17;
 			}
 			Display = linearzoomin;
 			pictureBox_show->Image = Display;
+			this->panel1->Location = Point(pictureBox_show->Location.X + Display->Width + 50, this->panel1->Location.Y);
 		}
 
 	}	
@@ -2205,6 +2245,7 @@ private: System::Windows::Forms::Button^ button17;
 			}
 			Display = zoomout;
 			pictureBox_show->Image = Display;
+			this->panel1->Location = Point(pictureBox_show->Location.X + Display->Width + 50, this->panel1->Location.Y);
 		}
 		else if (this->checkBox4->Checked == true && this->checkBox3->Checked == false) {
 			Bitmap^ zoomout = gcnew Bitmap(Display->Width / times, Display->Height / times);
@@ -2229,6 +2270,7 @@ private: System::Windows::Forms::Button^ button17;
 			}
 			Display = zoomout;
 			pictureBox_show->Image = Display;
+			this->panel1->Location = Point(pictureBox_show->Location.X + Display->Width + 50, this->panel1->Location.Y);
 		}
 	
 	}
@@ -4175,11 +4217,129 @@ private: System::Windows::Forms::Button^ button17;
 		pictureBox_show->Image = Display;
 		SNR2();
 	}
+	// Laplacian 
+	private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) {
+		Bitmap^ process = gcnew Bitmap(Display->Width, Display->Height);
+		for (int i = 0; i < Display->Width; i++) {
+			for (int j = 0; j < Display->Height; j++) {
+				Color set = Display->GetPixel(i, j);
+				process->SetPixel(i, j, set);
+			}
+		}
+
+		Bitmap^ New = gcnew Bitmap(process->Width + 2, process->Height + 2);
+		for (int i = 0; i < New->Width; i++) {
+			for (int j = 0; j < New->Height; j++) {
+				if ((i == 0) && (j >= 1) && (j < New->Height - 1)) {
+					Color set = process->GetPixel(process->Width - 1, j - 1);
+					New->SetPixel(i, j, set);
+				}
+				else if ((i == New->Width - 1) && (j >= 1) && (j < New->Height - 1)) {
+					Color set = process->GetPixel(0, j - 1);
+					New->SetPixel(i, j, set);
+				}
+				else if ((j != 0) && (j != New->Height - 1)) {
+					Color set = process->GetPixel(i - 1, j - 1);
+					New->SetPixel(i, j, set);
+				}
+			}
+		}
+		for (int j = 0; j < New->Height; j += New->Height - 1) {
+			for (int i = 0; i < New->Width; i++) {
+				if (j == 0) {
+					Color set = New->GetPixel(i, New->Height - 2);
+					New->SetPixel(i, j, set);
+				}
+				else {
+					Color set = New->GetPixel(i, 1);
+					New->SetPixel(i, j, set);
+				}
+
+			}
+		}
+
+		float sum1 = 0;
+		float Max, Min;
+		for (int i = 1; i <= (New->Width - 2); i++) {
+			for (int j = 1; j <= (New->Height - 2); j++) {
+				for (int x = (i - 1); x <= (i + 1); x++) {
+					for (int y = (j - 1); y <= (j + 1); y++) {
+
+						if (x == i) {
+							if (y == j) {
+								sum1 += 20 * (New->GetPixel(x, y).R);
+							}
+							else {
+								sum1 += -4 * (New->GetPixel(x, y).R);
+							}
+						}
+						else {
+							if (y == j) {
+								sum1 += -4 * (New->GetPixel(x, y).R);
+							}
+							else {
+								sum1 += -(New->GetPixel(x, y).R);
+							}
+						}
+
+					}
+				}
+				if (i == 1 && j == 1) {
+					Max = sum1;
+					Min = sum1;
+				}
+				if (sum1 >= Max) {
+					Max = sum1;
+				}
+				else if (sum1 < Min) {
+					Min = sum1;
+				}
+				sum1 = 0;
+			}
+		}
+
+
+		sum1 = 0;
+		for (int i = 1; i <= (New->Width - 2); i++) {
+			for (int j = 1; j <= (New->Height - 2); j++) {
+				for (int x = (i - 1); x <= (i + 1); x++) {
+					for (int y = (j - 1); y <= (j + 1); y++) {
+						if (x == i) {
+							if (y == j) {
+								sum1 += 20 * (New->GetPixel(x, y).R);
+							}
+							else {
+								sum1 += -4 * (New->GetPixel(x, y).R);
+							}
+						}
+						else {
+							if (y == j) {
+								sum1 += -4 * (New->GetPixel(x, y).R);
+							}
+							else {
+								sum1 += -(New->GetPixel(x, y).R);
+							}
+						}
+					}
+				}
+				sum1 = ((sum1 - Min) / (Max - Min)) * 255;
+				Color set = Color::FromArgb((int)sum1, (int)sum1, (int)sum1);
+				sum1 = 0;
+				process->SetPixel(i - 1, j - 1, set);
+			}
+		}
+		Display = process;
+		pictureBox_show->Image = Display;
+		SNR2();
+	}
 	// Video
 	private: System::Void toolStripButton5_Click(System::Object^ sender, System::EventArgs^ e) {
 		Video^ video = gcnew Video;
 		video->Show();
 	}
+	
+
+
 };
 
 }
