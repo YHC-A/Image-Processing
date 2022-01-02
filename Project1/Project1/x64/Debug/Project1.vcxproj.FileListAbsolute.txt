@@ -16,3 +16,5 @@ D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Threshold1.resourc
 D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Transparency.resources
 D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.Video.resources
 D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+D:\imageprocessing\Image\Project1\Project1\x64\Debug\Project1.TTSdecode.resources

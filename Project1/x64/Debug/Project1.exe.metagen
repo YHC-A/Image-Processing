@@ -14,6 +14,7 @@
   Project1.splash_screen.resources - Embedded, ContainedInManifestFile, 
   Project1.Threshold1.resources - Embedded, ContainedInManifestFile, 
   Project1.Transparency.resources - Embedded, ContainedInManifestFile, 
+  Project1.TTSdecode.resources - Embedded, ContainedInManifestFile, 
   Project1.Video.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Project1, Version=0.0.*, Culture=不因語言而異 (不因國別而異): 
@@ -69,6 +70,7 @@ Class Project1.BitPlane: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     System.Windows.Forms.PictureBox pictureBox10 : Public
     System.Windows.Forms.PictureBox pictureBox11 : Public
   Methods:
+    LOADPCXDATA(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SNR(Bitmap, Bitmap): PrivateScope, Public, HideBySig
 Class Project1.BitDepth: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
@@ -143,6 +145,7 @@ Class Project1.Lightness: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   Fields:
     System.Windows.Forms.PictureBox pictureBox1 : Public
     System.Drawing.Bitmap lightness_picturebox : Public, Static
+    System.Drawing.Bitmap Fordisplay : Public, Static
 Class Project1.Overlap: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -170,6 +173,18 @@ Class Project1.Threshold: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     System.Drawing.Bitmap scr1 : Public
     System.Drawing.Bitmap scr_threshold_gray : Public
     System.Windows.Forms.PictureBox pictureBox1 : Public
+Class Project1.TTSdecode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    cliext.vector<System::Drawing::Bitmap ^> videoseries IsByValue : Public, InitOnly
+    Int32 rate : Public
+    Int32 FrameNumber : Public
+    cliext.vector<System::Drawing::Bitmap ^> motionvector IsByValue : Public, InitOnly
+    cliext.vector<System::Drawing::Graphics ^> MOTION IsByValue : Public, InitOnly
+    cliext.vector<System::Drawing::Bitmap ^> DECODE IsByValue : Public, InitOnly
+    cliext.vector<System::Drawing::Bitmap ^> decodesereis IsByValue : Public, InitOnly
+    cliext.vector<float> PSNR IsByValue : Public, InitOnly
 Class Project1.Video: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -190,6 +205,7 @@ Class Project1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   Fields:
     System.Drawing.Bitmap Display : Public
     System.Drawing.Bitmap OriginGray : Public
+    Int32 sigma : Public
     System.Drawing.Bitmap source : Public, Static
   Methods:
     LOADPCXDATA(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
@@ -202,6 +218,7 @@ Class Project1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Gary(): PrivateScope, Public, HideBySig
     GaryInvert(): PrivateScope, Public, HideBySig
     RGBtoHSI(Int32): PrivateScope, Public, HideBySig
+    clasigma(): PrivateScope, Public, HideBySig
 Class Project1.splash_screen: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

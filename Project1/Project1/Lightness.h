@@ -36,6 +36,7 @@ namespace Project1 {
 		}
 
 	public: static Bitmap^ lightness_picturebox;
+	public: static Bitmap^ Fordisplay;
 
 	public: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::TrackBar^ trackBar1;
@@ -182,6 +183,7 @@ namespace Project1 {
 					lightness_pic->SetPixel(i, j, set);
 				}
 			}
+			Fordisplay = lightness_pic;
 			pictureBox1->Image = lightness_pic;
 		}
 		else if (value = 0) {
@@ -205,6 +207,7 @@ namespace Project1 {
 				}
 			}
 			pictureBox1->Image = lightness_pic;
+			Fordisplay = lightness_pic;
 		}
 		else if (value < 0) {
 			for (int i = 0; i < lightness_picturebox->Width; i++) {
@@ -218,6 +221,7 @@ namespace Project1 {
 				}
 			}
 			pictureBox1->Image = lightness_pic;
+			Fordisplay = lightness_pic;
 		}
 		else if (value = 0) {
 			pictureBox1->Image = lightness_picturebox;

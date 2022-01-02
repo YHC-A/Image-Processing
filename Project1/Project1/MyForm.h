@@ -152,6 +152,10 @@ private: System::Windows::Forms::ToolStripButton^ toolStripButton5;
 private: System::Windows::Forms::Button^ button17;
 private: System::Windows::Forms::Button^ button18;
 private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
+private: System::Windows::Forms::TrackBar^ trackBar2;
+private: System::Windows::Forms::NumericUpDown^ numericUpDown2;
+private: System::Windows::Forms::GroupBox^ groupBox3;
+
 
 
 
@@ -350,6 +354,9 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->trackBar2 = (gcnew System::Windows::Forms::TrackBar());
+			this->numericUpDown2 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
 			this->toolStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox_origin))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox_colormapORpalette))->BeginInit();
@@ -361,6 +368,9 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->BeginInit();
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->BeginInit();
+			this->groupBox3->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// toolStrip1
@@ -374,7 +384,7 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			});
 			this->toolStrip1->Location = System::Drawing::Point(0, 0);
 			this->toolStrip1->Name = L"toolStrip1";
-			this->toolStrip1->Size = System::Drawing::Size(1712, 32);
+			this->toolStrip1->Size = System::Drawing::Size(1733, 32);
 			this->toolStrip1->TabIndex = 0;
 			this->toolStrip1->Text = L"toolStrip1";
 			// 
@@ -504,21 +514,21 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			// cutToolStripMenuItem
 			// 
 			this->cutToolStripMenuItem->Name = L"cutToolStripMenuItem";
-			this->cutToolStripMenuItem->Size = System::Drawing::Size(224, 30);
+			this->cutToolStripMenuItem->Size = System::Drawing::Size(222, 30);
 			this->cutToolStripMenuItem->Text = L"Cut";
 			this->cutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::cutToolStripMenuItem_Click_1);
 			// 
 			// overlapToolStripMenuItem
 			// 
 			this->overlapToolStripMenuItem->Name = L"overlapToolStripMenuItem";
-			this->overlapToolStripMenuItem->Size = System::Drawing::Size(224, 30);
+			this->overlapToolStripMenuItem->Size = System::Drawing::Size(222, 30);
 			this->overlapToolStripMenuItem->Text = L"Overlap";
 			this->overlapToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::overlapToolStripMenuItem_Click);
 			// 
 			// transparencyToolStripMenuItem
 			// 
 			this->transparencyToolStripMenuItem->Name = L"transparencyToolStripMenuItem";
-			this->transparencyToolStripMenuItem->Size = System::Drawing::Size(224, 30);
+			this->transparencyToolStripMenuItem->Size = System::Drawing::Size(222, 30);
 			this->transparencyToolStripMenuItem->Text = L"Transparency";
 			this->transparencyToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::transparencyToolStripMenuItem_Click);
 			// 
@@ -591,22 +601,22 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			this->histogramToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 12, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(136)));
 			this->histogramToolStripMenuItem->Name = L"histogramToolStripMenuItem";
-			this->histogramToolStripMenuItem->Size = System::Drawing::Size(317, 30);
+			this->histogramToolStripMenuItem->Size = System::Drawing::Size(320, 30);
 			this->histogramToolStripMenuItem->Text = L"Histogram";
 			this->histogramToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::histogramToolStripMenuItem_Click);
 			// 
 			// histogramEqualizationToolStripMenuItem
 			// 
 			this->histogramEqualizationToolStripMenuItem->Name = L"histogramEqualizationToolStripMenuItem";
-			this->histogramEqualizationToolStripMenuItem->Size = System::Drawing::Size(317, 30);
+			this->histogramEqualizationToolStripMenuItem->Size = System::Drawing::Size(320, 30);
 			this->histogramEqualizationToolStripMenuItem->Text = L"Histogram equalization";
 			this->histogramEqualizationToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::histogramEqualizationToolStripMenuItem_Click);
 			// 
 			// histogramSpecificatioToolStripMenuItem
 			// 
 			this->histogramSpecificatioToolStripMenuItem->Name = L"histogramSpecificatioToolStripMenuItem";
-			this->histogramSpecificatioToolStripMenuItem->Size = System::Drawing::Size(317, 30);
-			this->histogramSpecificatioToolStripMenuItem->Text = L"Histogram specificatio";
+			this->histogramSpecificatioToolStripMenuItem->Size = System::Drawing::Size(320, 30);
+			this->histogramSpecificatioToolStripMenuItem->Text = L"Histogram specification";
 			this->histogramSpecificatioToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::histogramSpecificatioToolStripMenuItem_Click);
 			// 
 			// Filter
@@ -709,7 +719,7 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			// 
 			// pictureBox_show
 			// 
-			this->pictureBox_show->Location = System::Drawing::Point(557, 331);
+			this->pictureBox_show->Location = System::Drawing::Point(557, 391);
 			this->pictureBox_show->Name = L"pictureBox_show";
 			this->pictureBox_show->Size = System::Drawing::Size(352, 227);
 			this->pictureBox_show->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
@@ -897,7 +907,7 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			});
 			this->statusStrip1->Location = System::Drawing::Point(0, 762);
 			this->statusStrip1->Name = L"statusStrip1";
-			this->statusStrip1->Size = System::Drawing::Size(1712, 31);
+			this->statusStrip1->Size = System::Drawing::Size(1733, 31);
 			this->statusStrip1->TabIndex = 13;
 			this->statusStrip1->Text = L"statusStrip1";
 			// 
@@ -1058,7 +1068,7 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			this->panel1->Controls->Add(this->radioButton1);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Controls->Add(this->radioButton2);
-			this->panel1->Location = System::Drawing::Point(982, 331);
+			this->panel1->Location = System::Drawing::Point(991, 391);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(583, 260);
 			this->panel1->TabIndex = 18;
@@ -1281,12 +1291,48 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
+			// trackBar2
+			// 
+			this->trackBar2->Location = System::Drawing::Point(6, 38);
+			this->trackBar2->Maximum = 100;
+			this->trackBar2->Minimum = -100;
+			this->trackBar2->Name = L"trackBar2";
+			this->trackBar2->Size = System::Drawing::Size(303, 56);
+			this->trackBar2->TabIndex = 19;
+			this->trackBar2->Scroll += gcnew System::EventHandler(this, &MyForm::trackBar2_Scroll);
+			// 
+			// numericUpDown2
+			// 
+			this->numericUpDown2->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->numericUpDown2->Location = System::Drawing::Point(335, 43);
+			this->numericUpDown2->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 100, 0, 0, System::Int32::MinValue });
+			this->numericUpDown2->Name = L"numericUpDown2";
+			this->numericUpDown2->Size = System::Drawing::Size(73, 34);
+			this->numericUpDown2->TabIndex = 20;
+			this->numericUpDown2->ValueChanged += gcnew System::EventHandler(this, &MyForm::numericUpDown2_ValueChanged);
+			// 
+			// groupBox3
+			// 
+			this->groupBox3->Controls->Add(this->numericUpDown2);
+			this->groupBox3->Controls->Add(this->trackBar2);
+			this->groupBox3->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->groupBox3->Location = System::Drawing::Point(557, 268);
+			this->groupBox3->Name = L"groupBox3";
+			this->groupBox3->Size = System::Drawing::Size(423, 100);
+			this->groupBox3->TabIndex = 22;
+			this->groupBox3->TabStop = false;
+			this->groupBox3->Text = L"Brightness";
+			this->groupBox3->Visible = false;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1733, 782);
+			this->ClientSize = System::Drawing::Size(1754, 782);
+			this->Controls->Add(this->groupBox3);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->statusStrip1);
@@ -1319,6 +1365,10 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->EndInit();
+			this->groupBox3->ResumeLayout(false);
+			this->groupBox3->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -2044,7 +2094,7 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 		Bitmap^ Gary = gcnew Bitmap(source->Width, source->Height);
 		for (int i = 0; i < source->Width; i++) {
 			for (int j = 0; j < source->Height; j++) {
-				int pixel = ((source->GetPixel(i, j).R) * 0.299 + (source->GetPixel(i, j).G) * 0.587 + (source->GetPixel(i, j).B) * 0.144);
+				int pixel = ((source->GetPixel(i, j).R) * 0.299 + (source->GetPixel(i, j).G) * 0.587 + (source->GetPixel(i, j).B) * 0.114);
 				Gary->SetPixel(i, j, Color::FromArgb(pixel, pixel, pixel));
 			}
 		}
@@ -2443,8 +2493,82 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 		Lightness^ light = gcnew Lightness;
 		light->lightness_picturebox = source;
 		light->pictureBox1->Image = source;
-		light->Show();
+		if (groupBox3->Visible == false) {
+			groupBox3->Visible = true;
+		}
+		else {
+			groupBox3->Visible = false;
+		}
 	}
+	// for bright function
+	private: System::Void trackBar2_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		int value = trackBar2->Value;
+		this->numericUpDown2->Text = String::Concat(value);
+		Bitmap^ lightness_pic = gcnew Bitmap(Display->Width, Display->Height);
+		float r, g, b;
+		if (value > 0) {
+			for (int i = 0; i < Display->Width; i++) {
+				for (int j = 0; j < Display->Height; j++) {
+					r = Display->GetPixel(i, j).R * (100 - value) / 100 + 255 * value / 100;
+					g = Display->GetPixel(i, j).G * (100 - value) / 100 + 255 * value / 100;
+					b = Display->GetPixel(i, j).B * (100 - value) / 100 + 255 * value / 100;
+					Color set = Color::FromArgb(r, g, b);
+					lightness_pic->SetPixel(i, j, set);
+				}
+			}
+			pictureBox_show->Image = lightness_pic;
+		}
+		else if (value < 0) {
+			for (int i = 0; i < Display->Width; i++) {
+				for (int j = 0; j < Display->Height; j++) {
+					r = Display->GetPixel(i, j).R * (100 + value) / 100 + 0 * -value / 100;
+					g = Display->GetPixel(i, j).G * (100 + value) / 100 + 0 * -value / 100;
+					b = Display->GetPixel(i, j).B * (100 + value) / 100 + 0 * -value / 100;
+					Color set = Color::FromArgb(r, g, b);
+					lightness_pic->SetPixel(i, j, set);
+				}
+			}
+			pictureBox_show->Image = lightness_pic;
+		}
+		else if (value = 0) {
+			pictureBox_show->Image = Display;
+		}
+	}
+	private: System::Void numericUpDown2_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
+		int value = System::Convert::ToInt32(numericUpDown2->Value);
+		trackBar2->Value = value;
+		Bitmap^ lightness_pic = gcnew Bitmap(Display->Width, Display->Height);
+		float r, g, b;
+		if (value > 0) {
+			for (int i = 0; i < Display->Width; i++) {
+				for (int j = 0; j < Display->Height; j++) {
+					r = Display->GetPixel(i, j).R * (100 - value) / 100 + 255 * value / 100;
+					g = Display->GetPixel(i, j).G * (100 - value) / 100 + 255 * value / 100;
+					b = Display->GetPixel(i, j).B * (100 - value) / 100 + 255 * value / 100;
+					Color set = Color::FromArgb(r, g, b);
+					lightness_pic->SetPixel(i, j, set);
+				}
+			}
+			pictureBox_show->Image = lightness_pic;
+		}
+		else if (value < 0) {
+			for (int i = 0; i < Display->Width; i++) {
+				for (int j = 0; j < Display->Height; j++) {
+					r = Display->GetPixel(i, j).R * (100 + value) / 100 + 0 * -value / 100;
+					g = Display->GetPixel(i, j).G * (100 + value) / 100 + 0 * -value / 100;
+					b = Display->GetPixel(i, j).B * (100 + value) / 100 + 0 * -value / 100;
+					Color set = Color::FromArgb(r, g, b);
+					lightness_pic->SetPixel(i, j, set);
+
+				}
+			}
+			pictureBox_show->Image = lightness_pic;
+		}
+		else if (value = 0) {
+			pictureBox_show->Image = Display;
+		}
+	}
+
 	// Threshold
 	private: System::Void toolStripButton2_Click_1(System::Object^ sender, System::EventArgs^ e) {
 		Threshold^ threshold = gcnew Threshold;
@@ -4338,6 +4462,8 @@ private: System::Windows::Forms::ToolStripMenuItem^ rGBInvertToolStripMenuItem;
 		video->Show();
 	}
 	
+
+
 
 
 };
