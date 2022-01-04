@@ -889,6 +889,10 @@ namespace Project1 {
 				LOADPCXDATA(openFileDialog1->FileName, pcx_head, pcx_palette);
 				Watermark = pcx_palette.palette;
 			}
+			else {
+				Watermark = safe_cast<Bitmap^>(Image::FromFile(openFileDialog1->FileName));
+				pictureBox11->Image = Watermark;
+			}
 		}
 
 		Bitmap^ watermark = gcnew Bitmap(Watermark ->Width, Watermark->Height);

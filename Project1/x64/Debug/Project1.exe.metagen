@@ -210,7 +210,7 @@ Class Project1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   Methods:
     LOADPCXDATA(String, PCXHEAD IsImplicitlyDereferenced, PCXPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     LOADBMPDATA(String, BMPHEAD IsImplicitlyDereferenced, BMPPALETTE IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
-    SNR(Bitmap, Bitmap): PrivateScope, Public, HideBySig
+    SNR(): PrivateScope, Public, HideBySig
     SNR2(): PrivateScope, Public, HideBySig
     Generate_R(): PrivateScope, Public, HideBySig
     Generate_G(): PrivateScope, Public, HideBySig

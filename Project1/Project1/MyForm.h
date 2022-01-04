@@ -708,7 +708,7 @@ private: System::Windows::Forms::Button^ button20;
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
-			this->label1->Location = System::Drawing::Point(1149, 73);
+			this->label1->Location = System::Drawing::Point(1087, 73);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(92, 19);
 			this->label1->TabIndex = 2;
@@ -991,7 +991,7 @@ private: System::Windows::Forms::Button^ button20;
 			// trackBar1
 			// 
 			this->trackBar1->Location = System::Drawing::Point(20, 98);
-			this->trackBar1->Maximum = 359;
+			this->trackBar1->Maximum = 360;
 			this->trackBar1->Name = L"trackBar1";
 			this->trackBar1->Size = System::Drawing::Size(385, 56);
 			this->trackBar1->TabIndex = 2;
@@ -1255,14 +1255,15 @@ private: System::Windows::Forms::Button^ button20;
 			// 
 			// numericUpDown1
 			// 
+			this->numericUpDown1->DecimalPlaces = 2;
 			this->numericUpDown1->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
-			this->numericUpDown1->Increment = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 65536 });
-			this->numericUpDown1->Location = System::Drawing::Point(402, 94);
-			this->numericUpDown1->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 25, 0, 0, 65536 });
+			this->numericUpDown1->Increment = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 131072 });
+			this->numericUpDown1->Location = System::Drawing::Point(378, 93);
+			this->numericUpDown1->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 3, 0, 0, 0 });
 			this->numericUpDown1->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
 			this->numericUpDown1->Name = L"numericUpDown1";
-			this->numericUpDown1->Size = System::Drawing::Size(54, 38);
+			this->numericUpDown1->Size = System::Drawing::Size(128, 38);
 			this->numericUpDown1->TabIndex = 23;
 			this->numericUpDown1->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
 			// 
@@ -1270,9 +1271,9 @@ private: System::Windows::Forms::Button^ button20;
 			// 
 			this->button6->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
-			this->button6->Location = System::Drawing::Point(270, 94);
+			this->button6->Location = System::Drawing::Point(246, 93);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(126, 37);
+			this->button6->Size = System::Drawing::Size(136, 37);
 			this->button6->TabIndex = 22;
 			this->button6->Text = L"HighBoost";
 			this->button6->UseVisualStyleBackColor = true;
@@ -1913,34 +1914,30 @@ private: System::Windows::Forms::Button^ button20;
 
 
 	// Compare with Origin color picture
-	public:double SNR(Bitmap^ scr1, Bitmap^ result) {
-
-		long long R = 0, G = 0, B = 0;
-		long long resR = 0, resG = 0, resB = 0;
-		double square = 0.0;
-		double sigma = 0.0;
-		double SNR;
-		for (int i = 0; i < scr1->Width; i++) {
-			for (int j = 0; j < scr1->Height; j++) {
-				R += scr1->GetPixel(i, j).R;
-				G += scr1->GetPixel(i, j).G;
-				B += scr1->GetPixel(i, j).B;
+	public: void SNR() {
+		long long sum1 = 0, sum2 = 0, R = 0, G = 0, B = 0;
+		double final;
+		for (int i = 0; i < Display->Width; i++) {
+			for (int j = 0; j < Display->Height; j++) {
+				sum1 += pow((Display->GetPixel(i, j).R), 2);
+				sum1 += pow((Display->GetPixel(i, j).G), 2);
+				sum1 += pow((Display->GetPixel(i, j).B), 2);
 			}
 		}
-		for (int i = 0; i < result->Width; i++) {
-			for (int j = 0; j < result->Height; j++) {
-				resR += result->GetPixel(i, j).R;
-				resG += result->GetPixel(i, j).G;
-				resB += result->GetPixel(i, j).B;
+
+		for (int i = 0; i < source->Width; i++) {
+			for (int j = 0; j < source->Height; j++) {
+				sum2 += pow((Display->GetPixel(i, j).R) - source->GetPixel(i, j).R, 2);
+				sum2 += pow((Display->GetPixel(i, j).G) - source->GetPixel(i, j).G, 2);
+				sum2 += pow((Display->GetPixel(i, j).B) - source->GetPixel(i, j).B, 2);
 			}
 		}
-		// SNR = origin / (result - origin)
-		square += pow(R, 2) + pow(G, 2) + pow(B, 2);
-		sigma += pow(resR - R, 2) + pow(resG - G, 2) + pow(resB - B, 2);
 
-		SNR = 10 * log10(square / sigma);
-		//	this->label13->Text = SNR.ToString("0.00") + " DB";
-		return SNR;
+		final = 10 * log((double)sum1 / (double)sum2);
+
+
+		this->toolStripStatusLabel5->Text = "SNR = " + (final).ToString("0.000") + " DB";
+
 	}
 
 	// Compare with Gray level
@@ -1963,10 +1960,10 @@ private: System::Windows::Forms::Button^ button20;
 			}
 		}
 
-		final = abs(10 * log((double)sum1 / (double)sum2));
+		final = 10 * log((double)sum1 / (double)sum2);
 
 
-		this->toolStripStatusLabel5->Text = "SNR = " + (final).ToString("0.000") + "DB";
+		this->toolStripStatusLabel5->Text = "SNR = " + (final).ToString("0.000") + " DB";
 
 	}
 
@@ -2064,10 +2061,12 @@ private: System::Windows::Forms::Button^ button20;
 	private: System::Void origin_Click(System::Object^ sender, System::EventArgs^ e) {
 		Display = source;
 		this->pictureBox_show->Image = source;
+		SNR();
 	}
 	private: System::Void show_R_Click(System::Object^ sender, System::EventArgs^ e) {	
 		Display = Generate_R();		
 		this->pictureBox_show->Image = Display;
+		SNR();
 	}
 	public:Bitmap^ Generate_R() {
 		Bitmap^ R = gcnew Bitmap(source->Width, source->Height);
@@ -2081,6 +2080,7 @@ private: System::Windows::Forms::Button^ button20;
 	private: System::Void show_G_Click(System::Object^ sender, System::EventArgs^ e) {
 		Display = Generate_G();
 		this->pictureBox_show->Image = Display;
+		SNR();
 	}
 	public:Bitmap^ Generate_G() {
 		Bitmap^ G = gcnew Bitmap(source->Width, source->Height);
@@ -2095,6 +2095,7 @@ private: System::Windows::Forms::Button^ button20;
 	private: System::Void show_B_Click(System::Object^ sender, System::EventArgs^ e) {
 		Display = Generate_B();
 		this->pictureBox_show->Image = Display;
+		SNR();
 	}
 	public:Bitmap^ Generate_B() {
 		Bitmap^ B = gcnew Bitmap(source->Width, source->Height);
@@ -2117,13 +2118,14 @@ private: System::Windows::Forms::Button^ button20;
 		}
 		Display = RGB_Invert;
 		pictureBox_show->Image = Display;
-		SNR(source, Display);
+		SNR();
 	}
 
 	private: System::Void 灰階ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		OriginGray = Gary();
 		Display = OriginGray;
 		pictureBox_show->Image = Display;
+		SNR();
 	}	
 	public: Bitmap^ Gary() {
 		Bitmap^ Gary = gcnew Bitmap(source->Width, source->Height);
@@ -2139,6 +2141,7 @@ private: System::Windows::Forms::Button^ button20;
 	private: System::Void 負片ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		Display = GaryInvert();
 		pictureBox_show->Image = Display;
+		SNR();
 	}
 	public: Bitmap^ GaryInvert() {
 		Bitmap^ GaryInvert = gcnew Bitmap(source->Width, source->Height);
@@ -2242,6 +2245,7 @@ private: System::Windows::Forms::Button^ button20;
 			Display = simplezoomin;
 			pictureBox_show->Image = Display;
 			this->panel1->Location = Point(pictureBox_show->Location.X + Display->Width + 50, this->panel1->Location.Y);
+			SNR();
 		}
 		else if ((this->checkBox1->Checked == false) && this->checkBox2->Checked == true) {
 			double times = System::Convert::ToDouble(textBox1->Text);
@@ -2313,6 +2317,7 @@ private: System::Windows::Forms::Button^ button20;
 			Display = linearzoomin;
 			pictureBox_show->Image = Display;
 			this->panel1->Location = Point(pictureBox_show->Location.X + Display->Width + 50, this->panel1->Location.Y);
+			SNR();
 		}
 
 	}	
@@ -2331,6 +2336,7 @@ private: System::Windows::Forms::Button^ button20;
 			Display = zoomout;
 			pictureBox_show->Image = Display;
 			this->panel1->Location = Point(pictureBox_show->Location.X + Display->Width + 50, this->panel1->Location.Y);
+			SNR();
 		}
 		else if (this->checkBox4->Checked == true && this->checkBox3->Checked == false) {
 			Bitmap^ zoomout = gcnew Bitmap(Display->Width / times, Display->Height / times);
@@ -2356,6 +2362,7 @@ private: System::Windows::Forms::Button^ button20;
 			Display = zoomout;
 			pictureBox_show->Image = Display;
 			this->panel1->Location = Point(pictureBox_show->Location.X + Display->Width + 50, this->panel1->Location.Y);
+			SNR();
 		}
 	
 	}
@@ -2552,6 +2559,7 @@ private: System::Windows::Forms::Button^ button20;
 				}
 			}
 			pictureBox_show->Image = lightness_pic;
+			SNR();
 		}
 		else if (value < 0) {
 			for (int i = 0; i < Display->Width; i++) {
@@ -2564,9 +2572,11 @@ private: System::Windows::Forms::Button^ button20;
 				}
 			}
 			pictureBox_show->Image = lightness_pic;
+			SNR();
 		}
 		else if (value = 0) {
 			pictureBox_show->Image = Display;
+			SNR();
 		}
 	}
 	private: System::Void numericUpDown2_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
@@ -2585,6 +2595,7 @@ private: System::Windows::Forms::Button^ button20;
 				}
 			}
 			pictureBox_show->Image = lightness_pic;
+			SNR();
 		}
 		else if (value < 0) {
 			for (int i = 0; i < Display->Width; i++) {
@@ -2598,9 +2609,11 @@ private: System::Windows::Forms::Button^ button20;
 				}
 			}
 			pictureBox_show->Image = lightness_pic;
+			SNR();
 		}
 		else if (value = 0) {
 			pictureBox_show->Image = Display;
+			SNR();
 		}
 	}
 
@@ -2698,6 +2711,7 @@ private: System::Windows::Forms::Button^ button20;
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 		Display = OriginGray;
 		this->pictureBox_show->Image = Display;
+		SNR2();
 	}
 	// Pseudo filter
 	private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
@@ -3189,104 +3203,100 @@ private: System::Windows::Forms::Button^ button20;
 	}
 	// High pass
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-		Bitmap^ extend_3 = gcnew Bitmap(Display->Width + 2, Display->Height + 2);
-		for (int i = 0; i < extend_3->Width; i++) {
-			for (int j = 0; j < extend_3->Height; j++) {
-				if ((i >= 1) && (j >= 1) && (i < extend_3->Width - 1) && (j < extend_3->Height - 1)) {
-					extend_3->SetPixel(i, j, Display->GetPixel(i - 1, j - 1));
+		Bitmap^ process = gcnew Bitmap(Display->Width, Display->Height);
+		for (int i = 0; i < Display->Width; i++) {
+			for (int j = 0; j < Display->Height; j++) {
+				Color set = Display->GetPixel(i, j);
+				process->SetPixel(i, j, set);
+			}
+		}
+
+		Bitmap^ New = gcnew Bitmap(process->Width + 2, process->Height + 2);
+		for (int i = 0; i < New->Width; i++) {
+			for (int j = 0; j < New->Height; j++) {
+				if ((i == 0) && (j >= 1) && (j < New->Height - 1)) {
+					Color set = process->GetPixel(process->Width - 1, j - 1);
+					New->SetPixel(i, j, set);
 				}
-				else if ((i < 1) && (j >= 1) && (j < extend_3->Height - 1)) {								//放大圖圖形左邊
-					extend_3->SetPixel(i, j, Display->GetPixel(0, j - 1));
+				else if ((i == New->Width - 1) && (j >= 1) && (j < New->Height - 1)) {
+					Color set = process->GetPixel(0, j - 1);
+					New->SetPixel(i, j, set);
 				}
-				else if ((j >= 1) && (j < extend_3->Height - 1) && (i >= extend_3->Width - 1)) {		//放大圖圖形右邊
-					extend_3->SetPixel(i, j, Display->GetPixel(Display->Width - 1, j - 1));
-				}
-				else if ((i >= 1) && (i < extend_3->Width - 1) && (j < 1)) {								//放大圖圖形上面
-					extend_3->SetPixel(i, j, Display->GetPixel(i - 1, 0));
-				}
-				else if ((i >= 1) && (i < extend_3->Width - 1) && (j >= extend_3->Height - 1)) {		//放大圖圖形下面
-					extend_3->SetPixel(i, j, Display->GetPixel(i - 1, Display->Height - 1));
-				}
-				else {																						//剩四個角隨便填入最左上角的pixel值，若一個一個寫頗麻煩
-					extend_3->SetPixel(i, j, Display->GetPixel(0, 0));
+				else if ((j != 0) && (j != New->Height - 1)) {
+					Color set = process->GetPixel(i - 1, j - 1);
+					New->SetPixel(i, j, set);
 				}
 			}
 		}
-		Bitmap^ extend_5 = gcnew Bitmap(Display->Width + 4, Display->Height + 4);
-		for (int i = 0; i < extend_5->Width; i++) {
-			for (int j = 0; j < extend_5->Height; j++) {
-				if ((i >= 2) && (j >= 2) && (i < extend_5->Width - 2) && (j < extend_5->Height - 2)) {
-					extend_5->SetPixel(i, j, Display->GetPixel(i - 2, j - 2));
+		for (int j = 0; j < New->Height; j += New->Height - 1) {
+			for (int i = 0; i < New->Width; i++) {
+				if (j == 0) {
+					Color set = New->GetPixel(i, New->Height - 2);
+					New->SetPixel(i, j, set);
 				}
-				else if ((i < 2) && (j >= 2) && (j < extend_5->Height - 2)) {								//放大圖圖形左邊
-					extend_5->SetPixel(i, j, Display->GetPixel(0, j - 2));
+				else {
+					Color set = New->GetPixel(i, 1);
+					New->SetPixel(i, j, set);
 				}
-				else if ((j >= 2) && (j < extend_5->Height - 2) && (i >= extend_5->Width - 2)) {		//放大圖圖形右邊
-					extend_5->SetPixel(i, j, Display->GetPixel(Display->Width - 1, j - 2));
-				}
-				else if ((i >= 2) && (i < extend_5->Width - 2) && (j < 2)) {								//放大圖圖形上面
-					extend_5->SetPixel(i, j, Display->GetPixel(i - 2, 0));
-				}
-				else if ((i >= 2) && (i < extend_5->Width - 2) && (j >= extend_5->Height - 2)) {		//放大圖圖形下面
-					extend_5->SetPixel(i, j, Display->GetPixel(i - 2, Display->Height - 1));
-				}
-				else {																						//剩四個角隨便填入最左上角的pixel值，若一個一個寫頗麻煩
-					extend_5->SetPixel(i, j, Display->GetPixel(0, 0));
-				}
+
 			}
 		}
-		if (radioButton1->Checked == true) {
-			float mask_3[9] = { -1,-1,-1,-1,8,-1,-1,-1,-1 };
-			Bitmap^ highpass_3 = gcnew Bitmap(Display->Width, Display->Height);
-			for (int i = 1; i < extend_3->Width - 1; i++) {
-				for (int j = 1; j < extend_3->Height - 1; j++) {
-					float row[9] = { 0 };
-					int	a = 0;
-					for (int m = -1; m <= 1; m++) {
-						for (int n = -1; n <= 1; n++) {
-							row[a] = extend_3->GetPixel(i + m, j + n).R;
-							a++;
+
+
+		float sum1 = 0;
+		float Max, Min;
+		for (int i = 1; i <= (New->Width - 2); i++) {
+			for (int j = 1; j <= (New->Height - 2); j++) {
+				for (int x = (i - 1); x <= (i + 1); x++) {
+					for (int y = (j - 1); y <= (j + 1); y++) {
+						if ((x == i) && (y == j)) {
+							sum1 += (8 * Convert::ToDouble(New->GetPixel(x, y).R) / 9);
+						}
+						else {
+							sum1 += -((New->GetPixel(x, y).R) / 9);
 						}
 					}
-					float sum = 0;
-					for (int q = 0; q < 9; q++) {
-						sum = sum + round(row[q] * mask_3[q] );		//對比拉伸原理將各個pixel值分布在0~255，不管濾波器值設多少，都是/9
-					}													//因為有負值，所以幾乎整張變黑
-					if (sum < 0) { sum = 0; }
-					if (sum > 255) { sum = 255; }
-					highpass_3->SetPixel(i - 1, j - 1, Color::FromArgb((int)sum, (int)sum, (int)sum));
 				}
+				if (i == 1 && j == 1) {
+					Max = sum1;
+					Min = sum1;
+				}
+				if (sum1 >= Max) {
+					Max = sum1;
+				}
+				else if (sum1 < Min) {
+					Min = sum1;
+				}
+				sum1 = 0;
 			}
-			Display = highpass_3;
-			pictureBox_show->Image = highpass_3;
-			SNR2();
 		}
-		else if (radioButton2->Checked == true) {
-			float mask_5[25] = { -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,24,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1 };
-			Bitmap^ highpass_5 = gcnew Bitmap(Display->Width, Display->Height);
-			for (int i = 2; i < extend_5->Width - 2; i++) {
-				for (int j = 2; j < extend_5->Height - 2; j++) {
-					float row[25] = { 0 };
-					int	a = 0;
-					for (int m = -2; m <= 2; m++) {
-						for (int n = -2; n <= 2; n++) {
-							row[a] = extend_5->GetPixel(i + m, j + n).R;
-							a++;
+
+
+		sum1 = 0;
+		for (int i = 1; i <= (New->Width - 2); i++) {
+			for (int j = 1; j <= (New->Height - 2); j++) {
+				for (int x = (i - 1); x <= (i + 1); x++) {
+					for (int y = (j - 1); y <= (j + 1); y++) {
+						if ((x == i) && (y == j)) {
+							sum1 += (8 * Convert::ToDouble(New->GetPixel(x, y).R) / 9);
+
+						}
+						else {
+							sum1 += -((New->GetPixel(x, y).R) / 9);
+
 						}
 					}
-					float sum = 0;
-					for (int q = 0; q < 25; q++) {
-						sum = sum + round(row[q] * mask_5[q]);		//對比拉伸原理將各個pixel值分布在0~255
-					}
-					if (sum < 0) { sum = 0; }
-					if (sum > 255) { sum = 255; }
-					highpass_5->SetPixel(i - 2, j - 2, Color::FromArgb((int)sum, (int)sum, (int)sum));
 				}
+				sum1 = ((sum1 - Min) / (Max - Min)) * 255;
+				Color set = Color::FromArgb((int)sum1, (int)sum1, (int)sum1);
+				sum1 = 0;
+				process->SetPixel(i - 1, j - 1, set);
 			}
-			Display = highpass_5;
-			pictureBox_show->Image = highpass_5;
-			SNR2();
 		}
+		Display = process;
+		pictureBox_show->Image = Display;
+		SNR2();
+
 
 	}
 	// Hight boost
@@ -3360,6 +3370,7 @@ private: System::Windows::Forms::Button^ button20;
 			}
 		}
 
+
 		sum1 = 0;
 		for (int i = 1; i <= (New->Width - 2); i++) {
 			for (int j = 1; j <= (New->Height - 2); j++) {
@@ -3384,6 +3395,7 @@ private: System::Windows::Forms::Button^ button20;
 		Display = process;
 		pictureBox_show->Image = Display;
 		SNR2();
+
 	}
 	// outlier
 	public: void clasigma() {
