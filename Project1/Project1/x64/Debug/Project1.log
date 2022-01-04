@@ -38,7 +38,7 @@ D:\imageprocessing\Image\Project1\Project1\Lightness.h(217,71): warning C4244: '
 D:\imageprocessing\Image\Project1\Project1\Lightness.h(218,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Lightness.h(218,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Lightness.h(218,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Gary code.h(354,17): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Gary code.h(363,17): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Bit plane.h(573,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::BitPlane::PCXHEAD'
 D:\imageprocessing\Image\Project1\Project1\Bit plane.h(85): message : 請參閱 'Project1::BitPlane::PCXHEAD' 的宣告
 D:\imageprocessing\Image\Project1\Project1\Bit plane.h(573,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::BitPlane::PCXPALETTE'
@@ -71,24 +71,43 @@ D:\imageprocessing\Image\Project1\Project1\Threshold.h(205,28): warning C4244: '
 D:\imageprocessing\Image\Project1\Project1\Threshold.h(370,13): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Threshold.h(375,13): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Threshold.h(392,28): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(206,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(207,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(208,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(209,91): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(209,74): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(209,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(221,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(222,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(223,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(224,65): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(224,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(224,49): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(236,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(237,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(238,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(239,65): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(239,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(239,49): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(322,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(323,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(324,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(325,91): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(325,74): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(325,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(337,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(338,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(339,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(340,65): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(340,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(340,49): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(352,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(353,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(354,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(355,65): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(355,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(355,49): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(368,28): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(383,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(384,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(385,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(386,92): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(386,75): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(386,58): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(398,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(399,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(400,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(401,66): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(401,58): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(401,50): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(413,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(414,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(415,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(416,66): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(416,58): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(416,50): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Histogram.h(214,29): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Histogram equalization.h(182,28): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Histogram equalization.h(224,15): warning C4244: '正在初始化': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
@@ -184,124 +203,123 @@ D:\imageprocessing\Image\Project1\Project1\Video.h(734,1): message : 訊息: 'Th
 D:\imageprocessing\Image\Project1\Project1\Video.h(737,1): warning C4947: 'System::Threading::Thread::Resume': 已標記為過時
 D:\imageprocessing\Image\Project1\Project1\Video.h(737,1): message : 訊息: 'Thread.Resume has been deprecated.  Please use other classes in System.Threading, such as Monitor, Mutex, Event, and Semaphore, to synchronize Threads or protect resources.  http://go.microsoft.com/fwlink/?linkid=14202'
 D:\imageprocessing\Image\Project1\Project1\Video.h(794,1): warning C4244: '+=': 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1431,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::PCXHEAD'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(213): message : 請參閱 'Project1::MyForm::PCXHEAD' 的宣告
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1431,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::PCXPALETTE'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(234): message : 請參閱 'Project1::MyForm::PCXPALETTE' 的宣告
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1646,79): warning C4677: 'LOADBMPDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::BMPHEAD'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(239): message : 請參閱 'Project1::MyForm::BMPHEAD' 的宣告
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1646,79): warning C4677: 'LOADBMPDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::BMPPALETTE'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(258): message : 請參閱 'Project1::MyForm::BMPPALETTE' 的宣告
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1656,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1657,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1658,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1686,45): warning C4244: '=': 將 'long' 轉換為 'unsigned char'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1650,7): warning C4101: 'red': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1650,19): warning C4101: 'blue': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1650,12): warning C4101: 'green': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1790,17): warning C4101: 'brushHSI': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1917,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1918,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1919,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1925,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1926,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1927,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2097,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2112,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2151,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2151,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2151,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2152,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2152,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2152,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2153,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2153,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2153,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,70): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,46): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2193,51): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2193,40): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2213,70): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2213,46): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2216,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2216,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2288,75): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2288,50): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2292,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2292,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2301,75): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2301,50): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2304,54): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2305,56): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2314,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2315,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2316,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2318,37): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2318,26): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2357,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2358,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2361,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2361,66): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2384,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2385,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2389,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2389,67): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2390,82): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2390,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2409,29): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2424,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2425,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2428,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2428,66): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2443,29): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2457,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2458,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1466,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::PCXHEAD'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(215): message : 請參閱 'Project1::MyForm::PCXHEAD' 的宣告
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1466,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::PCXPALETTE'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(236): message : 請參閱 'Project1::MyForm::PCXPALETTE' 的宣告
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1681,79): warning C4677: 'LOADBMPDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::BMPHEAD'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(241): message : 請參閱 'Project1::MyForm::BMPHEAD' 的宣告
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1681,79): warning C4677: 'LOADBMPDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::BMPPALETTE'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(260): message : 請參閱 'Project1::MyForm::BMPPALETTE' 的宣告
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1691,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1692,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1693,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1721,45): warning C4244: '=': 將 'long' 轉換為 'unsigned char'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1685,7): warning C4101: 'red': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1685,19): warning C4101: 'blue': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1685,12): warning C4101: 'green': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1825,17): warning C4101: 'brushHSI': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1952,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1953,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1954,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1960,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1961,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1962,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2132,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2147,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2186,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2186,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2186,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2187,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2187,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2187,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2223,70): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2223,46): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2228,51): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2228,40): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2248,70): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2248,46): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2251,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2251,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2323,75): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2323,50): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2327,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2327,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2336,75): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2336,50): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2339,54): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2340,56): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2349,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2350,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2351,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2353,37): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2353,26): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2392,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2393,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2396,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2396,66): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2419,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2420,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2424,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2424,67): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2425,82): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2425,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2444,29): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2459,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2460,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\MyForm.h(2463,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2463,67): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2464,82): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2464,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2512,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2513,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2514,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2515,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2515,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2515,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2524,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2525,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2526,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2527,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2527,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2527,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2545,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2546,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2463,66): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2478,29): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2492,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2493,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2498,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2498,67): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2499,82): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2499,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\MyForm.h(2547,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2548,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2548,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2548,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2557,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2558,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2548,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2549,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2550,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2550,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2550,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\MyForm.h(2559,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2560,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2560,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2560,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2656,15): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2659,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2710,14): warning C4101: 'B': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2710,8): warning C4101: 'R': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2710,11): warning C4101: 'G': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2803,14): warning C4101: 'B': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2803,8): warning C4101: 'R': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2803,11): warning C4101: 'G': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2883,23): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2885,20): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2942,14): warning C4101: 'B': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2942,8): warning C4101: 'R': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2942,11): warning C4101: 'G': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3111,28): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3177,15): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3180,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3241,18): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3264,18): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2560,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2561,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2562,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2562,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2562,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2580,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2581,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2582,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2583,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2583,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2583,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2592,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2593,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2594,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2595,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2595,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2595,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2691,15): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2694,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3167,14): warning C4101: 'B': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3167,8): warning C4101: 'R': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3167,11): warning C4101: 'G': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3336,28): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3402,15): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3405,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3466,18): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3489,18): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3563,33): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3564,33): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3581,17): warning C4244: '正在初始化': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3625,32): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3626,32): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3643,16): warning C4244: '正在初始化': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(4127,17): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
   splash_screen.cpp
 D:\imageprocessing\Image\Project1\Project1\Cut.h(151,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Cut.h(152,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
@@ -342,7 +360,7 @@ D:\imageprocessing\Image\Project1\Project1\Lightness.h(217,71): warning C4244: '
 D:\imageprocessing\Image\Project1\Project1\Lightness.h(218,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Lightness.h(218,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Lightness.h(218,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Gary code.h(354,17): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Gary code.h(363,17): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Bit plane.h(573,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::BitPlane::PCXHEAD'
 D:\imageprocessing\Image\Project1\Project1\Bit plane.h(85): message : 請參閱 'Project1::BitPlane::PCXHEAD' 的宣告
 D:\imageprocessing\Image\Project1\Project1\Bit plane.h(573,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::BitPlane::PCXPALETTE'
@@ -375,24 +393,43 @@ D:\imageprocessing\Image\Project1\Project1\Threshold.h(205,28): warning C4244: '
 D:\imageprocessing\Image\Project1\Project1\Threshold.h(370,13): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Threshold.h(375,13): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Threshold.h(392,28): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(206,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(207,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(208,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(209,91): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(209,74): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(209,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(221,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(222,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(223,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(224,65): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(224,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(224,49): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(236,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(237,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(238,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(239,65): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(239,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(239,49): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(322,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(323,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(324,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(325,91): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(325,74): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(325,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(337,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(338,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(339,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(340,65): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(340,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(340,49): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(352,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(353,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(354,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(355,65): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(355,57): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(355,49): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(368,28): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(383,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(384,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(385,11): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(386,92): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(386,75): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(386,58): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(398,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(399,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(400,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(401,66): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(401,58): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(401,50): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(413,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(414,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(415,18): warning C4244: '引數': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(416,66): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(416,58): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\Color bit depth.h(416,50): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Histogram.h(214,29): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Histogram equalization.h(182,28): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\Histogram equalization.h(224,15): warning C4244: '正在初始化': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
@@ -488,134 +525,133 @@ D:\imageprocessing\Image\Project1\Project1\Video.h(734,1): message : 訊息: 'Th
 D:\imageprocessing\Image\Project1\Project1\Video.h(737,1): warning C4947: 'System::Threading::Thread::Resume': 已標記為過時
 D:\imageprocessing\Image\Project1\Project1\Video.h(737,1): message : 訊息: 'Thread.Resume has been deprecated.  Please use other classes in System.Threading, such as Monitor, Mutex, Event, and Semaphore, to synchronize Threads or protect resources.  http://go.microsoft.com/fwlink/?linkid=14202'
 D:\imageprocessing\Image\Project1\Project1\Video.h(794,1): warning C4244: '+=': 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1431,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::PCXHEAD'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(213): message : 請參閱 'Project1::MyForm::PCXHEAD' 的宣告
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1431,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::PCXPALETTE'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(234): message : 請參閱 'Project1::MyForm::PCXPALETTE' 的宣告
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1646,79): warning C4677: 'LOADBMPDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::BMPHEAD'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(239): message : 請參閱 'Project1::MyForm::BMPHEAD' 的宣告
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1646,79): warning C4677: 'LOADBMPDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::BMPPALETTE'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(258): message : 請參閱 'Project1::MyForm::BMPPALETTE' 的宣告
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1656,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1657,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1658,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1686,45): warning C4244: '=': 將 'long' 轉換為 'unsigned char'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1650,7): warning C4101: 'red': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1650,19): warning C4101: 'blue': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1650,12): warning C4101: 'green': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1790,17): warning C4101: 'brushHSI': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1917,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1918,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1919,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1925,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1926,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1927,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2097,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2112,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2151,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2151,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2151,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2152,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2152,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2152,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2153,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2153,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2153,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,70): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,46): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2193,51): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2193,40): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2213,70): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2213,46): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2216,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2216,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2288,75): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2288,50): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2292,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2292,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2301,75): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2301,50): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2304,54): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2305,56): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2314,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2315,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2316,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2318,37): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2318,26): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2357,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2358,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2361,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2361,66): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2384,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2385,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2389,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2389,67): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2390,82): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2390,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2409,29): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2424,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2425,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2428,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2428,66): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2443,29): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2457,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2458,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1466,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::PCXHEAD'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(215): message : 請參閱 'Project1::MyForm::PCXHEAD' 的宣告
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1466,2): warning C4677: 'LOADPCXDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::PCXPALETTE'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(236): message : 請參閱 'Project1::MyForm::PCXPALETTE' 的宣告
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1681,79): warning C4677: 'LOADBMPDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::BMPHEAD'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(241): message : 請參閱 'Project1::MyForm::BMPHEAD' 的宣告
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1681,79): warning C4677: 'LOADBMPDATA': 非私用成員的簽章含有組件私用類型 'Project1::MyForm::BMPPALETTE'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(260): message : 請參閱 'Project1::MyForm::BMPPALETTE' 的宣告
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1691,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1692,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1693,15): warning C4244: '正在初始化': 將 'double' 轉換為 'long'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1721,45): warning C4244: '=': 將 'long' 轉換為 'unsigned char'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1685,7): warning C4101: 'red': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1685,19): warning C4101: 'blue': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1685,12): warning C4101: 'green': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1825,17): warning C4101: 'brushHSI': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1952,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1953,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1954,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1960,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1961,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1962,1): warning C4244: '+=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2132,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2147,15): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2186,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2186,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2186,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2187,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2187,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2187,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,58): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,48): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2188,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2223,70): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2223,46): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2228,51): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2228,40): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2248,70): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2248,46): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2251,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2251,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2323,75): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2323,50): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2327,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2327,38): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2336,75): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2336,50): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2339,54): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2340,56): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2349,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2350,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2351,16): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2353,37): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2353,26): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2392,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2393,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2396,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2396,66): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2419,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2420,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2424,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2424,67): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2425,82): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2425,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2444,29): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2459,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2460,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\MyForm.h(2463,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2463,67): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2464,82): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2464,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2512,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2513,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2514,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2515,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2515,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2515,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2524,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2525,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2526,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2527,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2527,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2527,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2545,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2546,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2463,66): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2478,29): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2492,18): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2493,19): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2498,100): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2498,67): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2499,82): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2499,49): warning C4244: '引數': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\MyForm.h(2547,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2548,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2548,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2548,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2557,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2558,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2548,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2549,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2550,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2550,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2550,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
 D:\imageprocessing\Image\Project1\Project1\MyForm.h(2559,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2560,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2560,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2560,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2656,15): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2659,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2710,14): warning C4101: 'B': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2710,8): warning C4101: 'R': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2710,11): warning C4101: 'G': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2803,14): warning C4101: 'B': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2803,8): warning C4101: 'R': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2803,11): warning C4101: 'G': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2883,23): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2885,20): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2942,14): warning C4101: 'B': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2942,8): warning C4101: 'R': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2942,11): warning C4101: 'G': 未參考的區域變數
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3111,28): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3177,15): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3180,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3241,18): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(3264,18): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2560,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2561,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2562,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2562,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2562,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2580,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2581,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2582,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2583,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2583,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2583,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2592,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2593,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2594,58): warning C4244: '=': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2595,40): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2595,37): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2595,34): warning C4244: '引數': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2691,15): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2694,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3167,14): warning C4101: 'B': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3167,8): warning C4101: 'R': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3167,11): warning C4101: 'G': 未參考的區域變數
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3336,28): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3402,15): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3405,15): warning C4244: '=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3466,18): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3489,18): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3563,33): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3564,33): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3581,17): warning C4244: '正在初始化': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3625,32): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3626,32): warning C4244: '=': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(3643,16): warning C4244: '正在初始化': 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(4127,17): warning C4244: '=': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
   正在產生程式碼...
 D:\imageprocessing\Image\Project1\Project1\Overlap.h(388): warning C4700: 使用了未初始化的區域變數 'color_number'
 D:\imageprocessing\Image\Project1\Project1\Transparency.h(417): warning C4700: 使用了未初始化的區域變數 'color_num'
 D:\imageprocessing\Image\Project1\Project1\Histogram specification1.h(432): warning C4700: 使用了未初始化的區域變數 'color_num'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2170): warning C4715: 'Project1::MyForm::RGBtoHSI': 不是所有控制路徑都傳回值
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1829): warning C4700: 使用了未初始化的區域變數 'check'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2205): warning C4715: 'Project1::MyForm::RGBtoHSI': 不是所有控制路徑都傳回值
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1864): warning C4700: 使用了未初始化的區域變數 'check'
 D:\imageprocessing\Image\Project1\Project1\Overlap.h(388): warning C4700: 使用了未初始化的區域變數 'color_number'
 D:\imageprocessing\Image\Project1\Project1\Transparency.h(417): warning C4700: 使用了未初始化的區域變數 'color_num'
 D:\imageprocessing\Image\Project1\Project1\Histogram specification1.h(432): warning C4700: 使用了未初始化的區域變數 'color_num'
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(2170): warning C4715: 'Project1::MyForm::RGBtoHSI': 不是所有控制路徑都傳回值
-D:\imageprocessing\Image\Project1\Project1\MyForm.h(1829): warning C4700: 使用了未初始化的區域變數 'check'
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(2205): warning C4715: 'Project1::MyForm::RGBtoHSI': 不是所有控制路徑都傳回值
+D:\imageprocessing\Image\Project1\Project1\MyForm.h(1864): warning C4700: 使用了未初始化的區域變數 'check'
   8Connect.obj : 發現 MSIL 模組。MSIL 的累加連結已停用。正在執行完整連結
   Project1.vcxproj -> D:\imageprocessing\Image\Project1\x64\Debug\Project1.exe

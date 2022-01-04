@@ -109,99 +109,108 @@ namespace Project1 {
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label9->Location = System::Drawing::Point(355, 206);
+			this->label9->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label9->Location = System::Drawing::Point(349, 207);
 			this->label9->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(91, 20);
+			this->label9->Size = System::Drawing::Size(117, 25);
 			this->label9->TabIndex = 39;
 			this->label9->Text = L"2 ^ 0 Plane";
 			// 
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label8->Location = System::Drawing::Point(591, 206);
+			this->label8->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label8->Location = System::Drawing::Point(593, 207);
 			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(91, 20);
+			this->label8->Size = System::Drawing::Size(117, 25);
 			this->label8->TabIndex = 38;
 			this->label8->Text = L"2 ^ 1 Plane";
 			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label7->Location = System::Drawing::Point(856, 206);
+			this->label7->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label7->Location = System::Drawing::Point(844, 207);
 			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(91, 20);
+			this->label7->Size = System::Drawing::Size(117, 25);
 			this->label7->TabIndex = 37;
 			this->label7->Text = L"2 ^ 2 Plane";
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label6->Location = System::Drawing::Point(1100, 206);
+			this->label6->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label6->Location = System::Drawing::Point(1088, 207);
 			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(86, 20);
+			this->label6->Size = System::Drawing::Size(117, 25);
 			this->label6->TabIndex = 36;
-			this->label6->Text = L"2 ^ 3Plane";
+			this->label6->Text = L"2 ^ 3 Plane";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label5->Location = System::Drawing::Point(345, 451);
+			this->label5->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label5->Location = System::Drawing::Point(349, 452);
 			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(91, 20);
+			this->label5->Size = System::Drawing::Size(117, 25);
 			this->label5->TabIndex = 35;
 			this->label5->Text = L"2 ^ 4 Plane";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label4->Location = System::Drawing::Point(605, 451);
+			this->label4->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label4->Location = System::Drawing::Point(593, 452);
 			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(91, 20);
+			this->label4->Size = System::Drawing::Size(117, 25);
 			this->label4->TabIndex = 34;
 			this->label4->Text = L"2 ^ 5 Plane";
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label3->Location = System::Drawing::Point(852, 451);
+			this->label3->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label3->Location = System::Drawing::Point(840, 452);
 			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(91, 20);
+			this->label3->Size = System::Drawing::Size(117, 25);
 			this->label3->TabIndex = 33;
 			this->label3->Text = L"2 ^ 6 Plane";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label2->Location = System::Drawing::Point(1085, 451);
+			this->label2->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label2->Location = System::Drawing::Point(1088, 452);
 			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(91, 20);
+			this->label2->Size = System::Drawing::Size(117, 25);
 			this->label2->TabIndex = 32;
 			this->label2->Text = L"2 ^ 7 Plane";
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"新細明體", 12));
-			this->label1->Location = System::Drawing::Point(84, 206);
+			this->label1->Font = (gcnew System::Drawing::Font(L"微軟正黑體", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(136)));
+			this->label1->Location = System::Drawing::Point(72, 207);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(59, 20);
+			this->label1->Size = System::Drawing::Size(76, 25);
 			this->label1->TabIndex = 31;
 			this->label1->Text = L"Source";
 			// 

@@ -223,7 +223,7 @@ namespace Project1 {
 		pictureBox1->Image = Otsu;
 
 
-		//8-Connected==========================================================================================
+		// 8-Connected ====================================
 		long long label[256][256] = { 0 };
 		long long num = 1;
 		//Set table
@@ -509,13 +509,13 @@ namespace Project1 {
 					scan_8->SetPixel(i, j, Color::FromArgb(0, 0, 0));
 				}
 				else if (label[i][j] % 10 == 0) {
-					scan_8->SetPixel(i, j, Color::FromArgb(110, 220, 170));
+					scan_8->SetPixel(i, j, Color::FromArgb(255, 0, 0));
 				}
 				else if (label[i][j] % 10 == 1) {
-					scan_8->SetPixel(i, j, Color::FromArgb(230, 200, 0));
+					scan_8->SetPixel(i, j, Color::FromArgb(0, 255, 0));
 				}
 				else if (label[i][j] % 10 == 2) {
-					scan_8->SetPixel(i, j, Color::FromArgb(100, 80, 130));
+					scan_8->SetPixel(i, j, Color::FromArgb(0, 0, 255));
 				}
 				else if (label[i][j] % 10 == 3) {
 					scan_8->SetPixel(i, j, Color::FromArgb(250, 160, 250));
