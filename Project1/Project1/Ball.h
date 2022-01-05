@@ -198,8 +198,6 @@ namespace Project1 {
 			timer1->Stop();
 		}
 		private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-			xmove = (rand() % (b - a)) + a;
-			ymove = (rand() % (b - a)) + a;
 			timer1->Start();
 		}
 		private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {

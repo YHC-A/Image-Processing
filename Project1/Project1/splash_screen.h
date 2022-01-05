@@ -70,10 +70,10 @@ namespace Project1 {
 			// 
 			// progressBar1
 			// 
-			this->progressBar1->Location = System::Drawing::Point(0, 431);
+			this->progressBar1->Location = System::Drawing::Point(0, 357);
 			this->progressBar1->Margin = System::Windows::Forms::Padding(4);
 			this->progressBar1->Name = L"progressBar1";
-			this->progressBar1->Size = System::Drawing::Size(719, 29);
+			this->progressBar1->Size = System::Drawing::Size(721, 29);
 			this->progressBar1->TabIndex = 0;
 			this->progressBar1->UseWaitCursor = true;
 			// 
@@ -81,10 +81,10 @@ namespace Project1 {
 			// 
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(0, -9);
+			this->pictureBox1->Location = System::Drawing::Point(-70, 0);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(719, 440);
+			this->pictureBox1->Size = System::Drawing::Size(887, 360);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
@@ -95,7 +95,7 @@ namespace Project1 {
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(719, 460);
+			this->ClientSize = System::Drawing::Size(719, 387);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->progressBar1);
 			this->Cursor = System::Windows::Forms::Cursors::WaitCursor;

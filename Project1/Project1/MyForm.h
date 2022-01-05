@@ -1946,9 +1946,9 @@ private: System::Windows::Forms::Button^ button20;
 		double final;
 		for (int i = 0; i < Display->Width; i++) {
 			for (int j = 0; j < Display->Height; j++) {
-				sum1 += pow((OriginGray->GetPixel(i, j).R), 2);
-				sum1 += pow((OriginGray->GetPixel(i, j).G), 2);
-				sum1 += pow((OriginGray->GetPixel(i, j).B), 2);
+				sum1 += pow((Display->GetPixel(i, j).R), 2);
+				sum1 += pow((Display->GetPixel(i, j).G), 2);
+				sum1 += pow((Display->GetPixel(i, j).B), 2);
 			}
 		}
 
@@ -2378,7 +2378,7 @@ private: System::Windows::Forms::Button^ button20;
 
 	private: System::Void trackBar1_Scroll(System::Object^ sender, System::EventArgs^ e) {
 		
-		if (this->comboBox3->Text == "正推轉") {
+		if (this->comboBox3->Text == "正推") {
 			double	degree = trackBar1->Value;
 			this->textBox3->Text = String::Concat(trackBar1->Value);
 			double rad = degree * 0.01745329252; 
@@ -2407,7 +2407,7 @@ private: System::Windows::Forms::Button^ button20;
 			pictureBox_show->Image = rotate;
 		}
 
-		else if (this->comboBox3->Text == "逆推轉") {
+		else if (this->comboBox3->Text == "逆推") {
 			double theta = trackBar1->Value;
 			this->textBox3->Text = String::Concat(trackBar1->Value);
 			theta = theta * 0.01745329252;
@@ -2670,7 +2670,7 @@ private: System::Windows::Forms::Button^ button20;
 		Ball^ ball = gcnew Ball;
 		ball->Show();
 	}
-	// Contrast
+	// Contraset
 	private: System::Void contrastToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		ContrastSet^ set = gcnew ContrastSet;
 		set->scr_gray = OriginGray;
